@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bcc02b3d-9385-42d7-b736-bdd20b02c75d": {
+      "ProjectGuid": "bcc02b3d-9385-42d7-b736-bdd20b02c75d",
+      "DisplayName": "lngCollector",
+      "ColorIndex": 0
+    },
+    "7686bcbb-e608-4c59-8a2a-20a71127f1c9": {
+      "ProjectGuid": "7686bcbb-e608-4c59-8a2a-20a71127f1c9",
+      "DisplayName": "lngCollector.Model",
+      "ColorIndex": 1
+    },
+    "d5c462a8-af6a-4510-b68a-3e8a862cf3b4": {
+      "ProjectGuid": "d5c462a8-af6a-4510-b68a-3e8a862cf3b4",
+      "DisplayName": "lngCollector.WinForm",
+      "ColorIndex": 2
+    },
+    "d32af8ad-dd43-45a4-9722-59ba5e256624": {
+      "ProjectGuid": "d32af8ad-dd43-45a4-9722-59ba5e256624",
+      "DisplayName": "lngCollector.Services",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

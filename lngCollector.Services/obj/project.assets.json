@@ -1,0 +1,90 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "lngCollector.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/lngCollector.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lngCollector.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lngCollector.Model/1.0.0": {
+      "type": "project",
+      "path": "../lngCollector.Model/lngCollector.Model.csproj",
+      "msbuildProject": "../lngCollector.Model/lngCollector.Model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "lngCollector.Model >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\alesh\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "e:\\prj\\c#\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj",
+      "projectName": "lngCollector.Services",
+      "projectPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj",
+      "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
+      "outputPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "e:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
+              "projectPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
