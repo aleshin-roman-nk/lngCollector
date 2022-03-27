@@ -1,3 +1,7 @@
+using lngCollector.Services;
+using lngCollector.Services.sqliteDb;
+using Unity;
+
 namespace lngCollector.WinForm
 {
     internal static class Program
@@ -11,7 +15,21 @@ namespace lngCollector.WinForm
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            IUnityContainer container = new UnityContainer();
+
+            Form1 frm = new Form1();
+
+            container
+                .RegisterInstance<IMainView>(frm)
+                .RegisterType<IEWordRepo, EWordRepo>()
+                .RegisterType<IAppDataDbFactory, AppDataDbFactory>()
+                .RegisterType<IDbConfig, DbConfigSQLite>();
+
+            MainPresenter presenter = container.Resolve<MainPresenter>();
+
+            
+            Application.Run(frm);
         }
     }
 }

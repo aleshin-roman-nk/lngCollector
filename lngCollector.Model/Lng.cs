@@ -10,5 +10,6 @@ namespace lngCollector.Model
     {
         public int id { get; set; }
         public string name { get; set; }
+        public string short_name { get; set; }
     }
 }

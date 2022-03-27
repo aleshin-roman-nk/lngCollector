@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lngCollector", "lngCollector\lngCollector.csproj", "{BCC02B3D-9385-42D7-B736-BDD20B02C75D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector", "lngCollector\lngCollector.csproj", "{BCC02B3D-9385-42D7-B736-BDD20B02C75D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lngCollector.Model", "lngCollector.Model\lngCollector.Model.csproj", "{7686BCBB-E608-4C59-8A2A-20A71127F1C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector.Model", "lngCollector.Model\lngCollector.Model.csproj", "{7686BCBB-E608-4C59-8A2A-20A71127F1C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lngCollector.WinForm", "lngCollector.WinForm\lngCollector.WinForm.csproj", "{D5C462A8-AF6A-4510-B68A-3E8A862CF3B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector.WinForm", "lngCollector.WinForm\lngCollector.WinForm.csproj", "{D5C462A8-AF6A-4510-B68A-3E8A862CF3B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lngCollector.Services", "lngCollector.Services\lngCollector.Services.csproj", "{D32AF8AD-DD43-45A4-9722-59BA5E256624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector.Services", "lngCollector.Services\lngCollector.Services.csproj", "{D32AF8AD-DD43-45A4-9722-59BA5E256624}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,7 +9,7 @@ namespace lngCollector.Services
 {
     public interface IEWordRepo
     {
-        void Save(EWord ws);
+        int Save(EWord ws);
         void Delete(EWord ws);
         IEnumerable<EWord> GetAll();
     }
