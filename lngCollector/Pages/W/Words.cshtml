@@ -1,0 +1,9 @@
+﻿@page
+@model lngCollector.Pages.W.WordsModel
+@{
+}
+
+@foreach(var item in Model.Words){
+    var str = $"#{item.id} | {item.text}";
+    @str;<br>
+}

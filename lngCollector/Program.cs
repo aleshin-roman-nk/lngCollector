@@ -1,7 +1,13 @@
+using lngCollector.Services;
+using lngCollector.Services.sqliteDb;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddSingleton<IEWordRepo, EWordRepo>();
+builder.Services.AddSingleton<IAppDataDbFactory, AppDataDbFactory>();
+builder.Services.AddSingleton<IDbConfig, DbConfigSQLiteWeb>();
 
 var app = builder.Build();
 
@@ -23,3 +29,8 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+class DbConfigSQLiteWeb : IDbConfig
+{
+    public string path => @"..\db\lng.db";
+}

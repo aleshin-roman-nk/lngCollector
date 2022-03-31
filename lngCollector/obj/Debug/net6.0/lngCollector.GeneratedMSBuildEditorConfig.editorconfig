@@ -8,37 +8,45 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = lngCollector
 build_property.RootNamespace = lngCollector
-build_property.ProjectDir = e:\prj\c#\lngCollector\lngCollector\
+build_property.ProjectDir = g:\MyGIT\lngCollector\lngCollector\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = e:\prj\c#\lngCollector\lngCollector
+build_property.MSBuildProjectDirectory = g:\MyGIT\lngCollector\lngCollector
 build_property._RazorSourceGeneratorDebug = 
 
-[e:/prj/c\#/lngCollector/lngCollector/Pages/Error.cshtml]
+[g:/MyGIT/lngCollector/lngCollector/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/prj/c\#/lngCollector/lngCollector/Pages/Index.cshtml]
+[g:/MyGIT/lngCollector/lngCollector/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/prj/c\#/lngCollector/lngCollector/Pages/Privacy.cshtml]
+[g:/MyGIT/lngCollector/lngCollector/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/prj/c\#/lngCollector/lngCollector/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[g:/MyGIT/lngCollector/lngCollector/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/prj/c\#/lngCollector/lngCollector/Pages/_ViewImports.cshtml]
+[g:/MyGIT/lngCollector/lngCollector/Pages/W/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/MyGIT/lngCollector/lngCollector/Pages/W/Words.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV1xXb3Jkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[g:/MyGIT/lngCollector/lngCollector/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/prj/c\#/lngCollector/lngCollector/Pages/_ViewStart.cshtml]
+[g:/MyGIT/lngCollector/lngCollector/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/prj/c\#/lngCollector/lngCollector/Pages/Shared/_Layout.cshtml]
+[g:/MyGIT/lngCollector/lngCollector/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-oc9vdcd4q0

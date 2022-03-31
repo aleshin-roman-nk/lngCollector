@@ -31,5 +31,11 @@ namespace lngCollector.WinForm
             
             Application.Run(frm);
         }
+
+        private class DbConfigSQLite : IDbConfig
+        {
+            public string path => @"..\..\..\..\db\lng.db";
+            //public string path => @"lng.db";
+        }
     }
 }

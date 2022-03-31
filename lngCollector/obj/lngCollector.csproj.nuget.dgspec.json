@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "e:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj": {}
+    "g:\\MyGIT\\lngCollector\\lngCollector\\lngCollector.csproj": {}
   },
   "projects": {
-    "e:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj": {
+    "g:\\MyGIT\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj",
-        "projectName": "lngCollector",
-        "projectPath": "e:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj",
-        "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
-        "outputPath": "e:\\prj\\c#\\lngCollector\\lngCollector\\obj\\",
+        "projectUniqueName": "g:\\MyGIT\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
+        "projectName": "lngCollector.Model",
+        "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
+        "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
+        "outputPath": "g:\\MyGIT\\lngCollector\\lngCollector.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,6 +31,142 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "g:\\MyGIT\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "g:\\MyGIT\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj",
+        "projectName": "lngCollector.Services",
+        "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj",
+        "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
+        "outputPath": "g:\\MyGIT\\lngCollector\\lngCollector.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "g:\\MyGIT\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
+                "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "g:\\MyGIT\\lngCollector\\lngCollector\\lngCollector.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "g:\\MyGIT\\lngCollector\\lngCollector\\lngCollector.csproj",
+        "projectName": "lngCollector",
+        "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector\\lngCollector.csproj",
+        "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
+        "outputPath": "g:\\MyGIT\\lngCollector\\lngCollector\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "g:\\MyGIT\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj": {
+                "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

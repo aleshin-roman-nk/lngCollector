@@ -6,7 +6,7 @@ namespace lngCollector.WinForm
 {
     public partial class Form1 : Form, IMainView
     {
-        IEWordRepo repo = new EWordRepo(new AppDataDbFactory(new DbConfigSQLite()));
+        //IEWordRepo repo = new EWordRepo(new AppDataDbFactory(new DbConfigSQLite()));
         BindingSource bindingSource;
 
         EWord? currentWord => bindingSource.Current as EWord;
