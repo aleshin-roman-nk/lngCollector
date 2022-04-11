@@ -1,0 +1,51 @@
+﻿@page "{id?}/{handler?}/{id2?}"
+@using lngCollector.Tools
+@model lngCollector.Pages.games.makeSentencesModel
+@{
+
+}
+
+<span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">WORD LEVEL : @Model.Word.weight</span>
+<span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">@Model.Sentences.Count() snts</span>
+
+<br>Make sentences game for "<b>@Model.Word.text</b>"
+
+<form method="post" class="mt-3" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Word.id" />
+
+    <div class="mb-3">
+            <textarea asp-for="NewSentence" class="form-control" rows="5">@Model.NewSentence</textarea>
+            <br><input class = "btn btn-success" type="submit" asp-page-handler="CommitSentence" value="Commit" />
+    </div>
+</form>
+
+
+@foreach(var item in @Model.Sentences){
+
+    @*class="btn btn-danger badge m-1"*@
+
+    <div class = "row">
+        <div class="col">
+            <div class = "alert alert-success">@item.Text <a asp-page-handler="RemoveSentence" asp-route-ID="@Model.Word.id" asp-route-ID2="@item.Id" class="btn badge bg-danger">X</a></div>
+        </div>
+    </div>
+
+
+@*    <div class = "row alert alert-secondary">
+        <div class="alert alert-success" role="alert">
+            @item.Text
+        </div>*@
+
+
+
+@*        <div class = "col-10">
+            <div class="alert alert-success" role="alert">
+                <span class="badge bg-secondary">@item.Id</span> @item.Text
+            </div>
+        </div>*@
+
+@*        <div class = "col">
+            <a asp-page-handler="RemoveSentence" asp-route-ID="@Model.Word.id" asp-route-ID2="@item.Id" class="btn btn-danger badge bg-secondary m-1">Delete</a>
+        </div>*@
+@*    </div>*@
+}

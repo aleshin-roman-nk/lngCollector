@@ -69,5 +69,10 @@ namespace lngCollector.WinForm
         {
 
         }
+
+        public void ShowMsg(string msg)
+        {
+            MessageBox.Show(msg);
+        }
     }
 }

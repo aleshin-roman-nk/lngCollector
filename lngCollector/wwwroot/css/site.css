@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@400;500&family=Comfortaa:wght@300;400;500;600;700&family=Familjen+Grotesk&family=Lobster&family=Neonderthaw&family=Roboto+Condensed:wght@300;400&family=Ubuntu+Mono&display=swap');
+
 html {
   font-size: 14px;
 }
@@ -14,9 +16,78 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    font-family: 'Anek Tamil', sans-serif;
+    margin-bottom: 60px;
+    margin-top: 80px;
 }
 
 .menuBg {
     background: #17ac75;
+}
+
+.cardTextLeftFloating {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.pwordwrap {
+    overflow-wrap: break-word;
+}
+
+.menuBg {
+    background-color: #e9f5db;
+}
+
+.containerBordered {
+    border-right: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+}
+
+.mtrxItem {
+    width: 10px; /* or whatever width you want. */
+    height: 30px;
+    border-right: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    border-radius: 5px;
+    margin: 1px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cLevelEmptyCell {
+    background: #ffffff;
+}
+
+.cLevel0 {
+    background: #ffffff;
+}
+
+.cLevel1 {
+    background: #ff0000;
+}
+
+.cLevel2 {
+    background: #ff6a00;
+}
+
+.cLevel3 {
+    background: #ffd800;
+    color: #435100;
+}
+
+.cLevel4 {
+    background: #00ff21;
+    color: #000000;
+}
+
+.cLevel5 {
+    background: #00ffff;
+    color: #0026ff;
+}
+
+.cLevel6 {
+    background: #9f00ff;
+    color: #ffd800;
 }

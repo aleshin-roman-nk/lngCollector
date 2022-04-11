@@ -1,0 +1,12 @@
+e:\prj\c#\lngCollector\lngCollector.Tools\bin\release\net6.0\lngCollector.Tools.deps.json
+e:\prj\c#\lngCollector\lngCollector.Tools\bin\release\net6.0\lngCollector.Tools.dll
+e:\prj\c#\lngCollector\lngCollector.Tools\bin\release\net6.0\lngCollector.Tools.pdb
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.csproj.AssemblyReference.cache
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.GeneratedMSBuildEditorConfig.editorconfig
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.AssemblyInfoInputs.cache
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.AssemblyInfo.cs
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.csproj.CoreCompileInputs.cache
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.dll
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\refint\lngCollector.Tools.dll
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.pdb
+e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\ref\lngCollector.Tools.dll

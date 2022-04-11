@@ -1,5 +1,6 @@
 using lngCollector.Services;
 using lngCollector.Services.sqliteDb;
+using System.Text;
 using Unity;
 
 namespace lngCollector.WinForm
@@ -28,14 +29,30 @@ namespace lngCollector.WinForm
 
             MainPresenter presenter = container.Resolve<MainPresenter>();
 
-            
             Application.Run(frm);
         }
 
-        private class DbConfigSQLite : IDbConfig
+        class DbConfigSQLite : IDbConfig
         {
-            public string path => @"..\..\..\..\db\lng.db";
-            //public string path => @"lng.db";
+            string _path;
+            public string path => _path;
+            public DbConfigSQLite()
+            {
+                var fle = File.ReadAllText(@"lng-config-db.json", Encoding.UTF8);
+
+                fle = fle.Replace("\\", "\\\\");
+                //fle = fle.Replace("\\", "/");
+
+                var cfg = Newtonsoft.Json.JsonConvert.DeserializeObject<_cfg>(fle);
+                _path = cfg.path;
+
+                Console.WriteLine(cfg.path);
+            }
+        }
+
+        class _cfg
+        {
+            public string path { get; set; }
         }
     }
 }

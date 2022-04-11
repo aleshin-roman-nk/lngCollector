@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zDIWq6qXUqBWh065AWz3yueKAj9phc02gh6wl7LGMsmxfAMfmkwIxOaLiiP2QTsJDUO2GW8SW0bFzi3+YavaHg==",
+  "success": true,
+  "projectFilePath": "E:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alesh\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

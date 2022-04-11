@@ -1,0 +1,12 @@
+e:\prj\c#\lngCollector\lngCollector.Model\bin\release\net6.0\lngCollector.Model.deps.json
+e:\prj\c#\lngCollector\lngCollector.Model\bin\release\net6.0\lngCollector.Model.dll
+e:\prj\c#\lngCollector\lngCollector.Model\bin\release\net6.0\lngCollector.Model.pdb
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.csproj.AssemblyReference.cache
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.GeneratedMSBuildEditorConfig.editorconfig
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.AssemblyInfoInputs.cache
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.AssemblyInfo.cs
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.csproj.CoreCompileInputs.cache
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.dll
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\refint\lngCollector.Model.dll
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.pdb
+e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\ref\lngCollector.Model.dll

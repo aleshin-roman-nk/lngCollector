@@ -14,7 +14,7 @@ namespace lngCollector.Pages
 
         public void OnGet()
         {
-
+            
         }
     }
 }

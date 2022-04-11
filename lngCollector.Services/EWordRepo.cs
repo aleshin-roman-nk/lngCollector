@@ -18,9 +18,79 @@ namespace lngCollector.Services
             _dbFactory = dbFactory;
         }
 
+        public IEnumerable<Sentence> AddSentence(string txt, int wordId)
+        {
+            IEnumerable<Sentence> res;
+
+            using (var db = _dbFactory.Create())
+            {
+                db.Sentences.Add(new Sentence { Text = txt, WordId = wordId });
+                db.SaveChanges();
+                res = db.Sentences.Where(s => s.WordId == wordId).ToArray();
+
+                updateWeight(new EWord { id = wordId }, res, db);
+            }
+
+            
+            return res;
+        }
+
+        public EWord Create(EWord ws)
+        {
+            using (var db = _dbFactory.Create())
+            {
+                if (ws.id == 0)// a new word - check if it already exists
+                {
+                    ws.weight = 1;
+                    if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text)))
+                        throw new InvalidOperationException($"Word '{ws.text}' already exists");
+
+                    db.Entry(ws).State = EntityState.Added;
+                    db.SaveChanges();
+                    
+                    return ws;
+                }
+
+                throw new InvalidOperationException($"ID must not be 0");
+            }
+        }
+
         public void Delete(EWord ws)
         {
-            throw new NotImplementedException();
+            using (var db = _dbFactory.Create())
+            {
+                db.Entry(ws).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
+
+        public IEnumerable<Sentence> DelSentence(Sentence s)
+        {
+            IEnumerable<Sentence> res;
+
+            using (var db = _dbFactory.Create())
+            {
+                //var s = new Sentence { Id = id };
+                //db.Sentences.Attach(s);
+                //db.Sentences.Remove(s);
+
+                db.Sentences.Remove(s);
+                db.SaveChanges();
+
+                res = db.Sentences.Where(x => x.WordId == s.WordId).ToArray();
+
+                updateWeight(new EWord { id = s.WordId }, res, db);
+            }
+
+            return res;
+        }
+
+        public EWord Get(int id)
+        {
+            using (var db = _dbFactory.Create())
+            {
+                return db.EWords.FirstOrDefault(x => x.id == id);
+            }
         }
 
         public IEnumerable<EWord> GetAll()
@@ -31,15 +101,46 @@ namespace lngCollector.Services
             }
         }
 
+        private void updateWeight(EWord w, IEnumerable<Sentence> ws, AppDataDb db)
+        {
+           /*
+            * 0 - 9 : 1
+            * 10 - 19 : 2
+            * 20 - 29 : 3
+            * 30 - 39 : 4
+            * 40 - 49 : 5
+            * 50+ : 6
+            */
+
+            int lvl = ws.Count() / 10 + 1;
+            if (lvl > 6) lvl = 6;
+            if (lvl <= 0) lvl = 1;
+
+            w.weight = lvl;
+
+            db.EWords.Attach(w);
+            db.Entry(w).Property(x => x.weight).IsModified = true;
+            db.SaveChanges();
+        }
+
+        public IEnumerable<Sentence> GetSentences(int wordId)
+        {
+            using (var db = _dbFactory.Create())
+            {
+                return db.Sentences.Where(x => x.WordId == wordId).ToArray();
+            }
+        }
+
         public int Save(EWord ws)
         {
             using(var db = _dbFactory.Create())
             {
-                if(ws.id == 0)// a new word - check if it already exists
-                {
-                    if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text)))
-                        return 0;
+                if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text) && x.id != ws.id ))
+                    throw new InvalidOperationException($"Word '{ws.text}' already exists");
 
+                if (ws.id == 0)// a new word - check if it already exists
+                {
+                    ws.weight = 1;
                     db.Entry(ws).State = EntityState.Added;
                     return db.SaveChanges();
                 }
@@ -49,5 +150,14 @@ namespace lngCollector.Services
             }
         }
 
+        public int SaveDescriptionOnly(EWord ws)
+        {
+            using (var db = _dbFactory.Create())
+            {
+                db.EWords.Attach(ws);
+                db.Entry(ws).Property(x => x.description).IsModified = true;
+                return db.SaveChanges();
+            }
+        }
     }
 }

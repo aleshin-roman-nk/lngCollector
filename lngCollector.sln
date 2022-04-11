@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector.WinForm", "lng
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector.Services", "lngCollector.Services\lngCollector.Services.csproj", "{D32AF8AD-DD43-45A4-9722-59BA5E256624}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lngCollector.Tools", "lngCollector.Tools\lngCollector.Tools.csproj", "{68668E18-D518-452A-A389-13F575913689}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D32AF8AD-DD43-45A4-9722-59BA5E256624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D32AF8AD-DD43-45A4-9722-59BA5E256624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D32AF8AD-DD43-45A4-9722-59BA5E256624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68668E18-D518-452A-A389-13F575913689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68668E18-D518-452A-A389-13F575913689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68668E18-D518-452A-A389-13F575913689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68668E18-D518-452A-A389-13F575913689}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

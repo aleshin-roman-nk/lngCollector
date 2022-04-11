@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\lngCollector.Services\lngCollector.Services.csproj" />
+    <ProjectReference Include="..\lngCollector.Tools\lngCollector.Tools.csproj" />
   </ItemGroup>
 
 </Project>

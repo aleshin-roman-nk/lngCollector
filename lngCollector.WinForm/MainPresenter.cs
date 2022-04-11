@@ -35,7 +35,7 @@ namespace lngCollector.WinForm
 
         private void _view_SaveWord(object? sender, EWord e)
         {
-            _repo.Save(e);
+            if (_repo.Save(e) == 0) _view.ShowMsg("word could not be stored");
             _view.Display(_repo.GetAll());
         }
     }

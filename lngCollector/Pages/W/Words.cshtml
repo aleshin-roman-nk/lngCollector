@@ -1,9 +1,48 @@
 ﻿@page
 @model lngCollector.Pages.W.WordsModel
 @{
+    ViewData["Title"] = "All words";
+
+    string getLevel(int l)
+    {
+        return $"cLevel{l}";
+    }
 }
 
-@foreach(var item in Model.Words){
-    var str = $"#{item.id} | {item.text}";
-    @str;<br>
-}
+<div class="row">
+    <div class="col">
+            <a asp-page="/W/Edit" asp-route-ID="0" class="btn btn-outline-info m-1">New</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Level</th>
+                    <th scope="col">text</th>
+                    <th scope="col">action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model.Words)
+                {
+                    <tr>
+                        <td scope="row">@item.id</td>
+                        <td>
+                            <span class="badge rounded-pill @(getLevel(item.weight))">@item.weight</span>
+                        </td>
+                        <td><b>@item.text</b></td>
+                        <td>
+                            <a asp-page="/W/Detail" asp-route-ID="@item.id" class="btn btn-primary m-1">View</a>
+                            <a asp-page="/W/ConfirmDelete" asp-route-ID="@item.id" class="btn btn-danger m-1">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

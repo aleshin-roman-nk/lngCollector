@@ -12,5 +12,6 @@ namespace lngCollector.WinForm
         void Display(IEnumerable<EWord> c);
         event EventHandler<EWord> SaveWord;
         event EventHandler<EWord> DeleteWord;
+        void ShowMsg(string msg);
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace lngCollector.Services.sqliteDb
 {
-    public class AppDataDb: DbContext
+    public class AppDataDb : DbContext
     {
         string _path;
 
@@ -24,5 +24,6 @@ namespace lngCollector.Services.sqliteDb
 
         public DbSet<EWord> EWords { get; set; }
         public DbSet<Lng> Lngs { get; set; }
+        public DbSet<Sentence> Sentences { get; set; }
     }
 }
