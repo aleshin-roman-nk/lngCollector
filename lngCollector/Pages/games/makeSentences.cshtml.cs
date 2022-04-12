@@ -34,8 +34,17 @@ namespace lngCollector.Pages.games
 
         public IActionResult OnPostCommitSentence()
         {
-            Sentences = _db.AddSentence(NewSentence, Word.id);
+            if (!string.IsNullOrEmpty(NewSentence))
+                Sentences = _db.AddSentence(NewSentence, Word.id);
+            else
+            {
+                Error = "A sentence must not be an empty string";
+                Sentences = _db.GetSentences(Word.id);
+            }
+
             Word = _db.Get(Word.id);
+
+            NewSentence = "";
 
             return Page();
         }
@@ -47,5 +56,6 @@ namespace lngCollector.Pages.games
 
         [BindProperty]
         public string NewSentence { get; set; }
+        public string Error { get; set; }
     }
 }

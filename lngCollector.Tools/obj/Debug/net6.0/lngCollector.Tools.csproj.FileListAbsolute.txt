@@ -10,3 +10,15 @@ E:\prj\c#\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.dl
 E:\prj\c#\lngCollector\lngCollector.Tools\obj\Debug\net6.0\refint\lngCollector.Tools.dll
 E:\prj\c#\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.pdb
 E:\prj\c#\lngCollector\lngCollector.Tools\obj\Debug\net6.0\ref\lngCollector.Tools.dll
+g:\MyGIT\lngCollector\lngCollector.Tools\bin\Debug\net6.0\lngCollector.Tools.deps.json
+g:\MyGIT\lngCollector\lngCollector.Tools\bin\Debug\net6.0\lngCollector.Tools.dll
+g:\MyGIT\lngCollector\lngCollector.Tools\bin\Debug\net6.0\lngCollector.Tools.pdb
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.csproj.AssemblyReference.cache
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.GeneratedMSBuildEditorConfig.editorconfig
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.AssemblyInfoInputs.cache
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.AssemblyInfo.cs
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.csproj.CoreCompileInputs.cache
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.dll
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\refint\lngCollector.Tools.dll
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.pdb
+g:\MyGIT\lngCollector\lngCollector.Tools\obj\Debug\net6.0\ref\lngCollector.Tools.dll

@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector.WinForm", "lng
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector.Services", "lngCollector.Services\lngCollector.Services.csproj", "{D32AF8AD-DD43-45A4-9722-59BA5E256624}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lngCollector.Tools", "lngCollector.Tools\lngCollector.Tools.csproj", "{68668E18-D518-452A-A389-13F575913689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lngCollector.Tools", "lngCollector.Tools\lngCollector.Tools.csproj", "{68668E18-D518-452A-A389-13F575913689}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -24,14 +24,6 @@ namespace lngCollector.Pages.M
             {
                 for (int col = 0; col < ColsCount; col++)
                 {
-                    //if(col < 5) mi[row,col] = 0;
-                    //else if (col < 10) mi[row, col] = 1;
-                    //else if (col < 15) mi[row, col] = 2;
-                    //else if (col < 20) mi[row, col] = 3;
-                    //else if (col < 25) mi[row, col] = 4;
-                    //else if (col < 30) mi[row, col] = 5;
-                    //else mi[row, col] = 6;
-
                     // индекс в wcollection
                     int indx = colsCount * row + col;
 
