@@ -314,13 +314,17 @@
           "Microsoft.Data.Sqlite": "6.0.3",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.3",
-          "lngCollector.Model": "1.0.0"
+          "lngCollector.Model": "1.0.0",
+          "lngCollector.Tools": "1.0.0"
         },
         "runtime": {
           "lngCollector.Services.dll": {}
         }
       },
       "lngCollector.Tools/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
         "runtime": {
           "lngCollector.Tools.dll": {}
         }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SxEPK+JVqi/fANtu9MtVasm1LLP7rV7Dau6L7iLONt7ogqrznr8XeOJqe++/LEbyjKdPca46SFo9BOgxBL0NmQ==",
+  "dgSpecHash": "D6EU5zdyTrbwrn84sosqhCfX5mdirXVDXua6Fx+0oT+PJZRWhWGf5hL1vG4bkNReyNKHH7gcuj3kge/EBf6SVw==",
   "success": true,
-  "projectFilePath": "g:\\MyGIT\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
+  "projectFilePath": "e:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\roman\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\alesh\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

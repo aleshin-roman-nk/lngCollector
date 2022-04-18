@@ -475,7 +475,8 @@
           "Microsoft.Data.Sqlite": "6.0.3",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.3",
-          "lngCollector.Model": "1.0.0"
+          "lngCollector.Model": "1.0.0",
+          "lngCollector.Tools": "1.0.0"
         },
         "compile": {
           "bin/placeholder/lngCollector.Services.dll": {}
@@ -1190,23 +1191,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\roman\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\alesh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "g:\\MyGIT\\lngCollector\\lngCollector\\lngCollector.csproj",
+      "projectUniqueName": "e:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj",
       "projectName": "lngCollector",
-      "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector\\lngCollector.csproj",
-      "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-      "outputPath": "g:\\MyGIT\\lngCollector\\lngCollector\\obj\\",
+      "projectPath": "e:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj",
+      "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
+      "outputPath": "e:\\prj\\c#\\lngCollector\\lngCollector\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1220,11 +1217,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "g:\\MyGIT\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj": {
-              "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj"
+            "e:\\prj\\c#\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj": {
+              "projectPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj"
             },
-            "g:\\MyGIT\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {
-              "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj"
+            "e:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {
+              "projectPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj"
             }
           }
         }

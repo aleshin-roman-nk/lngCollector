@@ -1,5 +1,6 @@
 ﻿using lngCollector.Model;
 using lngCollector.Services.sqliteDb;
+using lngCollector.Tools;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,7 @@ namespace lngCollector.Services
             {
                 db.Sentences.Add(new Sentence { Text = txt, WordId = wordId });
                 db.SaveChanges();
-                res = db.Sentences.Where(s => s.WordId == wordId).ToArray();
+                res = db.Sentences.Where(s => s.WordId == wordId).OrderByDescending(x => x.Id).ToArray();
 
                 updateWeight(new EWord { id = wordId }, res, db);
             }
@@ -66,6 +67,8 @@ namespace lngCollector.Services
 
         public IEnumerable<Sentence> DelSentence(Sentence s)
         {
+            if(s == null) return Enumerable.Empty<Sentence>();
+
             IEnumerable<Sentence> res;
 
             using (var db = _dbFactory.Create())
@@ -74,10 +77,17 @@ namespace lngCollector.Services
                 //db.Sentences.Attach(s);
                 //db.Sentences.Remove(s);
 
-                db.Sentences.Remove(s);
-                db.SaveChanges();
+                Sentence s_db = db.Sentences.FirstOrDefault(x => x.Id == s.Id);
 
-                res = db.Sentences.Where(x => x.WordId == s.WordId).ToArray();
+                //LoggerObj.Write(s);
+
+                if (s_db != null)
+                {
+                    db.Sentences.Remove(s_db);
+                    db.SaveChanges();
+                }
+
+                res = db.Sentences.Where(x => x.WordId == s.WordId).OrderByDescending(x => x.Id).ToArray();
 
                 updateWeight(new EWord { id = s.WordId }, res, db);
             }
@@ -127,7 +137,7 @@ namespace lngCollector.Services
         {
             using (var db = _dbFactory.Create())
             {
-                return db.Sentences.Where(x => x.WordId == wordId).ToArray();
+                return db.Sentences.Where(x => x.WordId == wordId).OrderByDescending(x => x.Id).ToArray();
             }
         }
 
@@ -150,12 +160,13 @@ namespace lngCollector.Services
             }
         }
 
-        public int SaveDescriptionOnly(EWord ws)
+        public int SaveTextDescriptionOnly(EWord ws)
         {
             using (var db = _dbFactory.Create())
             {
                 db.EWords.Attach(ws);
                 db.Entry(ws).Property(x => x.description).IsModified = true;
+                db.Entry(ws).Property(x => x.text).IsModified = true;
                 return db.SaveChanges();
             }
         }

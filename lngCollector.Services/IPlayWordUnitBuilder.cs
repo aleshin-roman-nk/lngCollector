@@ -11,6 +11,6 @@ namespace lngCollector.Services
     public interface IPlayWordUnitBuilder
     {
         void Save(PlayWordUnit w);
-
+        PlayWordUnit Create(EWord w);
     }
 }

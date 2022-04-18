@@ -13,3 +13,5 @@ e:\prj\c#\lngCollector\lngCollector.Services\obj\release\net6.0\lngCollector.Ser
 e:\prj\c#\lngCollector\lngCollector.Services\obj\release\net6.0\refint\lngCollector.Services.dll
 e:\prj\c#\lngCollector\lngCollector.Services\obj\release\net6.0\lngCollector.Services.pdb
 e:\prj\c#\lngCollector\lngCollector.Services\obj\release\net6.0\ref\lngCollector.Services.dll
+e:\prj\c#\lngCollector\lngCollector.Services\bin\release\net6.0\lngCollector.Tools.dll
+e:\prj\c#\lngCollector\lngCollector.Services\bin\release\net6.0\lngCollector.Tools.pdb

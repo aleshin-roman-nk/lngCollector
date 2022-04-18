@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "g:\\MyGIT\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {}
+    "e:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {}
   },
   "projects": {
-    "g:\\MyGIT\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {
+    "e:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\MyGIT\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
+        "projectUniqueName": "e:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
         "projectName": "lngCollector.Tools",
-        "projectPath": "g:\\MyGIT\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
-        "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-        "outputPath": "g:\\MyGIT\\lngCollector\\lngCollector.Tools\\obj\\",
+        "projectPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
+        "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
+        "outputPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Tools\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

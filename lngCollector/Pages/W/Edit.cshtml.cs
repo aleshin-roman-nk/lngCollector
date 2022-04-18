@@ -70,7 +70,7 @@ namespace lngCollector.Pages.W
             try
             {
                 //repo.Save(Word);
-                repo.SaveDescriptionOnly(Word);
+                repo.SaveTextDescriptionOnly(Word);
             }
             catch (Exception ex)
             {

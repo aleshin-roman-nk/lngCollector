@@ -10,7 +10,7 @@ namespace lngCollector.Services
     public interface IEWordRepo
     {
         int Save(EWord ws);
-        int SaveDescriptionOnly(EWord ws);
+        int SaveTextDescriptionOnly(EWord ws);
         IEnumerable<Sentence> GetSentences(int wordId);
         IEnumerable<Sentence> AddSentence(string txt, int wordId);
         IEnumerable<Sentence> DelSentence(Sentence s);

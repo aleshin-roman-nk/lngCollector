@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 namespace lngCollector.Model
 {
     /// <summary>
-    /// 
+    /// Репозиторий одного экземпляра. Ассемблер игрового объекта, единственной физ-модели для страницы игры.
     /// </summary>
     public class PlayWordUnit
     {
-        public PlayWordUnit(EWord w)
-        {
 
-        }
 
         public List<Sentence> Sentences { get; }
 

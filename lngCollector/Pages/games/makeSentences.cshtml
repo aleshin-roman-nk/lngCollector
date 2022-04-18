@@ -1,6 +1,9 @@
-﻿@page "{id?}/{handler?}/{id2?}"
+﻿@page "{id}/{handler?}/{sentid?}"
+
 @using lngCollector.Tools
+
 @model lngCollector.Pages.games.makeSentencesModel
+
 @{
     ViewData["Title"] = $"Game - '{Model.Word.text}'";
     int c = 1;
@@ -13,6 +16,12 @@
     </div>
 }
 
+<div class="row">
+    <div class="col">
+        <a asp-page="/W/Detail" asp-route-ID="@Model.Word.id" class="btn btn-outline-info m-1">Detail</a>
+    </div>
+</div>
+
 <span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">WORD LEVEL : @Model.Word.weight</span>
 <span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">@Model.Sentences.Count() snts</span>
 
@@ -22,8 +31,17 @@
     <input type="hidden" asp-for="Word.id" />
 
     <div class="mb-3">
-            <textarea asp-for="NewSentence" class="form-control" rows="5">@Model.NewSentence</textarea>
-            <br><input class = "btn btn-success" type="submit" asp-page-handler="CommitSentence" value="Commit" />
+
+        @*<textarea asp-for="NewSentence" class="form-control" rows="5">@Model.NewSentence</textarea>*@
+
+        <textarea asp-for="NewSentence" class="form-control" rows="5">@Model.NewSentence</textarea>
+
+        <br>
+        
+        @*<input class="btn btn-success" type="submit" asp-page-handler="CommitSentence" value="Commit" />*@
+
+        <button class="btn btn-success" type="submit" asp-page-handler="CommitSentence">Commit</button>
+
     </div>
 </form>
 
@@ -32,8 +50,19 @@
         <div class="alert alert-success">
             @foreach (var item in @Model.Sentences)
             {
-                <a asp-page-handler="RemoveSentence" asp-route-ID="@Model.Word.id" asp-route-ID2="@item.Id" class="btn badge bg-danger">X</a>
-                @(c++)<text>) </text>  @item.Text 
+
+                <div class="btn-group" role="group" aria-label="snt_work">
+
+                    <a href="#" class="btn badge bg-info">E</a>
+                    <a asp-page-handler="RemoveSentence" asp-route-id="@Model.Word.id" asp-route-sentid="@item.Id" class="btn badge bg-danger">X</a>
+
+                </div>
+
+
+
+                @(c++)
+
+                <text>) </text>  @item.Text
                 <hr>
             }
         </div>

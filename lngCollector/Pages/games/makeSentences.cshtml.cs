@@ -21,12 +21,14 @@ namespace lngCollector.Pages.games
 
             Sentences = _db.GetSentences(Word.id);
 
+            NewSentence = "";
+
             return Page();
         }
 
-        public IActionResult OnGetRemoveSentence(int id, int id2)
+        public IActionResult OnGetRemoveSentence(int id, int sentid)
         {
-            Sentences = _db.DelSentence(new Sentence { Id = id2, WordId = id });
+            Sentences = _db.DelSentence(new Sentence { Id = sentid, WordId = id });
             Word = _db.Get(id);
 
             return Page();
@@ -47,6 +49,7 @@ namespace lngCollector.Pages.games
             NewSentence = "";
 
             return Page();
+            //return RedirectToPage("/games/makeSentences");
         }
 
         [BindProperty(SupportsGet = true)]
