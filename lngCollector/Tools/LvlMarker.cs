@@ -8,7 +8,11 @@ namespace lngCollector.Tools
         {
             if(w == null) return "cLevel0";
 
-            return $"cLevel{w.weight}";
+            int lvl = w.weight / 10 + 1;
+            if (lvl > 6) lvl = 6;
+            if (lvl <= 0) lvl = 1;
+
+            return $"cLevel{lvl}";
         }
     }
 }

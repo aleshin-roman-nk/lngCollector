@@ -7,19 +7,20 @@
 
 Matrix @Model.RowsCount x @Model.ColsCount | Cells : @(Model.RowsCount * Model.ColsCount) \ @Model.WordCount
 
-@for(int row = 0; row < Model.RowsCount; row++){
-
-    <div class = "row">
-
-    @for(int col = 0; col < Model.ColsCount; col++)
-    {
-       @if(Model.mi[row, col] != null)
+@for (int row = 0; row < Model.RowsCount; row++)
+{
+    <div class="row">
+        @for (int col = 0; col < Model.ColsCount; col++)
+        {
+            @if (Model.mi[row, col] != null)
             {
-                <a data-bs-toggle="tooltip" data-bs-placement="top" title="@Model.mi[row, col].text" asp-page="/games/makeSentences" asp-route-ID="@Model.mi[row, col].id" class = "col btn mtrxItem @(LvlMarker.getLevel(Model.mi[row, col]))">@Model.mi[row, col].weight</a>
+                <a data-bs-toggle="tooltip" data-bs-placement="top" title="@Model.mi[row, col].text" asp-page="/games/makeSentences" asp-route-ID="@Model.mi[row, col].id" class="btn mtrxItem @(LvlMarker.getLevel(Model.mi[row, col]))">
+                    @Model.mi[row, col].weight
+                </a>
             }
             else
             {
-                 <a href = "#" class = "col btn disabled mtrxItem @(LvlMarker.getLevel(Model.mi[row, col]))">X</a>
+                <a href="#" class="btn disabled mtrxItem @(LvlMarker.getLevel(Model.mi[row, col]))">X</a>
             }
         }
     </div>

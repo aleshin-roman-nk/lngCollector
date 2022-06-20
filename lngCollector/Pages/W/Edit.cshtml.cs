@@ -11,23 +11,16 @@ namespace lngCollector.Pages.W
         IEWordRepo repo;
         public EditModel(IEWordRepo r)
         {
-            //Console.WriteLine("EditModel constructed");
-
             repo = r;
         }
 
-        public IActionResult OnGet(int id)
+        public void OnGetCreate(int matrixid)
         {
-            //Console.WriteLine($"EditModel : GET METHOD ID={id}");
+            Word = new EWord { MatrixId = matrixid, weight = 0, lng_id = 0, date = DateTime.Now };
+        }
 
-            if(id == 0)
-            {
-                //Console.WriteLine($"EditModel : GET METHOD => create a new object");
-                Word = new EWord();
-
-                return Page();
-            }
-
+        public IActionResult OnGetEdit(int id)
+        {
             Word = repo.Get(id);
 
             if (Word == null)
@@ -36,45 +29,37 @@ namespace lngCollector.Pages.W
             return Page();
         }
 
-        public IActionResult OnPost(EWord word)
+        public IActionResult OnPost()
         {
-            //Console.WriteLine($"EditModel : POST METHOD ID={word.text}");
-
-            if(string.IsNullOrEmpty(word.text))
+            if(string.IsNullOrEmpty(Word.text))
             {
                 Error = "Words text must not be empty";
-                Word = word;
                 return Page();
             }
 
-            if(word.id == 0)
+            if(Word.id == 0)
             {
                 try
                 {
-                    Word = repo.Create(word);
-                    Word.lng_type = LngType.eng;
+                    Word = repo.Create(Word);
+                    //Word.lng_type = LngType.eng;
                     return RedirectToPage("Detail", new { id = Word.id });
                 }
                 catch (Exception ex)
                 {
-                    Error = ex.Message;
-                    Word = word;
+                    Error = ex.GetAllInners();
                     return Page();
                 }
             }
 
-            Word = word;
-
-            if (Word == null) return RedirectToPage("/NotFound");
-
             try
             {
                 //repo.Save(Word);
-                repo.SaveTextDescriptionOnly(Word);
+                repo.SaveTextpartOnly(Word);
             }
             catch (Exception ex)
             {
-                Error = ex.Message;
+                Error = ex.GetAllInners();
                 return Page();
             }
 
@@ -83,6 +68,7 @@ namespace lngCollector.Pages.W
             //return Page();
         }
 
+        [BindProperty]
         public EWord Word { get; set; }
         public string Error { get; set; }
     }

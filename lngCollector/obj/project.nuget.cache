@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p0QQEcp/zTkBFqC44nJZWXd5P/MkJWMKf9wtluZwUO4c8uAC/jNjY790u2hFJa0lLARJ7XU9iFWmfE7z2mLwlQ==",
+  "dgSpecHash": "fkRlkopbGXUALunjwC94CA9rG5gXeDOsjs5sDQ09lL64bRmdYmH8eu+VNDNONaRLs0TNBujrF0qC2BNlcuB6Ng==",
   "success": true,
-  "projectFilePath": "e:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj",
+  "projectFilePath": "E:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alesh\\.nuget\\packages\\microsoft.data.sqlite\\6.0.3\\microsoft.data.sqlite.6.0.3.nupkg.sha512",
     "C:\\Users\\alesh\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.3\\microsoft.data.sqlite.core.6.0.3.nupkg.sha512",

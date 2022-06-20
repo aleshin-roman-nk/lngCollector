@@ -44,12 +44,7 @@ namespace lngCollector.Pages.games
                 Sentences = _db.GetSentences(Word.id);
             }
 
-            Word = _db.Get(Word.id);
-
-            NewSentence = "";
-
-            return Page();
-            //return RedirectToPage("/games/makeSentences");
+            return RedirectToPage("/games/makesentences", new { id = Word.id});
         }
 
         [BindProperty(SupportsGet = true)]

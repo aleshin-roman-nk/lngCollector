@@ -15,4 +15,8 @@
     <ProjectReference Include="..\lngCollector.Tools\lngCollector.Tools.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+
 </Project>

@@ -8,11 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 //builder.Services.AddSingleton<IEWordRepo, EWordRepo>();
 builder.Services.AddTransient<IEWordRepo, EWordRepo>();
+builder.Services.AddTransient<IMatrixRepo, MatrixRepo>();
 
-builder.Services.AddSingleton<IAppDataDbFactory, AppDataDbFactory>();
-//builder.Services.AddScoped<IAppDataDbFactory, AppDataDbFactory>();
 
-//builder.Services.AddSingleton<IDbConfig, DbConfigSQLiteWeb>();
+builder.Services.AddScoped<IAppDataDbFactory, AppDataDbFactory>();
+
 builder.Services.AddSingleton<IDbConfig>(new DbConfigSQLiteWeb());
 
 builder.Services.Configure<RouteOptions>(options =>

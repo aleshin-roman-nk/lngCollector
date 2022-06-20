@@ -1,52 +1,89 @@
 ﻿@page "{id}"
+@using System.Text
 @model lngCollector.Pages.W.DetailModel
 @{
     ViewData["Title"] = $"Detail::'{Model.Word.text}'";
 
-    string[] lines = null;
+    List<string> lines = new List<string>();
+
+    if (!string.IsNullOrEmpty(Model.Word.meaning))
+    {
+        lines.Add("<h4>meaning</h4>");
+        foreach (var line in Model.Word.meaning.Split("\n"))
+            lines.Add($"{line}<br>");
+        lines.Add("<hr/>");
+    }
+
+    if (!string.IsNullOrEmpty(Model.Word.meaning_verb))
+    {
+        lines.Add("<h4>meaning_verb</h4>");
+        foreach (var line in Model.Word.meaning_verb.Split("\n"))
+            lines.Add($"{line}<br>");
+        lines.Add("<hr/>");
+    }
+
+    if (!string.IsNullOrEmpty(Model.Word.meaning_noun))
+    {
+        lines.Add("<h4>meaning_noun</h4>");
+        foreach (var line in Model.Word.meaning_noun.Split("\n"))
+            lines.Add($"{line}<br>");
+        lines.Add("<hr/>");
+    }
+
     if (!string.IsNullOrEmpty(Model.Word.description))
-        lines = Model.Word.description.Split("\n");
-    else lines = new string[] { };
+    {
+        lines.Add("<h4>description</h4>");
+        foreach (var line in Model.Word.description.Split("\n"))
+            lines.Add($"{line}<br>");
+        lines.Add("<hr/>");
+    }
+
+    if (!string.IsNullOrEmpty(Model.Word.examples))
+    {
+        lines.Add("<h4>examples</h4>");
+        foreach (var line in Model.Word.examples.Split("\n"))
+            lines.Add($"{line}<br>");
+        lines.Add("<hr/>");
+    }
+
+    if (!string.IsNullOrEmpty(Model.Word.expressions))
+    {
+        lines.Add("<h4>expressions</h4>");
+        foreach (var line in Model.Word.expressions.Split("\n"))
+            lines.Add($"{line}<br>");
+        lines.Add("<hr/>");
+    }
+
+    if (lines.Any())
+        lines.RemoveAt(lines.Count - 1);
 }
 
+<div class="row m-3" style="background-color: rgba(0,0,0,.25)">
+    <div class="col m-2">
+        <a asp-page="/wg/matrixdetail" asp-route-id="@Model.Word.MatrixId" class="btn btn-outline-secondary">Back</a>
+        <a asp-page="/W/Edit" asp-page-handler="edit" asp-route-ID="@Model.Word.id" asp-route-matrixid="@Model.Word.MatrixId" class="btn btn-primary">Edit</a>
+        <a asp-page="/games/makeSentences" asp-route-ID="@Model.Word.id" class="btn btn-danger">Game</a>
+    </div>
+</div>
+
 <div class="row justify-content-center m-3">
-    <div class="col col-lg-8">
+    <div class="col">
         <div class="card">
 
-            <div class="card-header cardHeaderStyle">
+            <div class="card-header">
                 <h1>@Model.Word.text</h1>
             </div>
 
             <div class="card-body">
                 <div class="row">
-
                     <div class="col col-lg-9">
                         @foreach (var line in lines)
                         {
-                            @line<br>
+                            @Html.Raw(line)
                         }
                     </div>
-                    <hr>
-@*                    <div class="col col-lg-3">
-                        <div style="border-right: 1px solid rgba(0,0,0,.1);">
-                            <img class="card-image-top imageThumbnail border border-primary" style="background-color: #d1e7ff" src="@photoPath" asp-append-version = "true"/>
-                        </div>
-                    </div>*@
-
                 </div>
-
-                <div class="row">
-                    <div class="col">
-                        <div class="card-footer text-center" style="background-color: rgba(0,0,0,.25)">
-                            <a asp-page="/W/Words" class="btn btn-secondary">Back</a>
-                            <a asp-page="/W/Edit" asp-route-ID="@Model.Word.id" class="btn btn-primary">Edit</a>
-                            <a asp-page="/games/makeSentences" asp-route-ID="@Model.Word.id" class="btn btn-danger">Game</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-
         </div>
     </div>
 </div>

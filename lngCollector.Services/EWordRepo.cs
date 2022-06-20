@@ -18,22 +18,21 @@ namespace lngCollector.Services
         {
             _dbFactory = dbFactory;
         }
-
+        
         public IEnumerable<Sentence> AddSentence(string txt, int wordId)
         {
-            IEnumerable<Sentence> res;
+            IQueryable<Sentence> res;
 
             using (var db = _dbFactory.Create())
             {
-                db.Sentences.Add(new Sentence { Text = txt, WordId = wordId });
+                res = db.Sentences.Where(s => s.WordId == wordId);
+                db.Sentences.Add(new Sentence { Text = txt, WordId = wordId, date = DateTime.Now });
+
+                increaseWordWeight(wordId, 1, db);
                 db.SaveChanges();
-                res = db.Sentences.Where(s => s.WordId == wordId).OrderByDescending(x => x.Id).ToArray();
 
-                updateWeight(new EWord { id = wordId }, res, db);
+                return res.OrderByDescending(x => x.Id).ToArray();
             }
-
-            
-            return res;
         }
 
         public EWord Create(EWord ws)
@@ -42,7 +41,7 @@ namespace lngCollector.Services
             {
                 if (ws.id == 0)// a new word - check if it already exists
                 {
-                    ws.weight = 1;
+                    ws.weight = 0;
                     if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text)))
                         throw new InvalidOperationException($"Word '{ws.text}' already exists");
 
@@ -77,19 +76,19 @@ namespace lngCollector.Services
                 //db.Sentences.Attach(s);
                 //db.Sentences.Remove(s);
 
-                Sentence s_db = db.Sentences.FirstOrDefault(x => x.Id == s.Id);
-
-                //LoggerObj.Write(s);
+                Sentence? s_db = db.Sentences.FirstOrDefault(x => x.Id == s.Id);
 
                 if (s_db != null)
                 {
                     db.Sentences.Remove(s_db);
+                    increaseWordWeight(s_db.WordId, -1, db);
                     db.SaveChanges();
                 }
 
                 res = db.Sentences.Where(x => x.WordId == s.WordId).OrderByDescending(x => x.Id).ToArray();
 
-                updateWeight(new EWord { id = s.WordId }, res, db);
+
+                //updateWeight(new EWord { id = s.WordId }, res, db);
             }
 
             return res;
@@ -111,26 +110,11 @@ namespace lngCollector.Services
             }
         }
 
-        private void updateWeight(EWord w, IEnumerable<Sentence> ws, AppDataDb db)
+        private void increaseWordWeight(int wordId, int vec1, AppDataDb db)
         {
-           /*
-            * 0 - 9 : 1
-            * 10 - 19 : 2
-            * 20 - 29 : 3
-            * 30 - 39 : 4
-            * 40 - 49 : 5
-            * 50+ : 6
-            */
-
-            int lvl = ws.Count() / 10 + 1;
-            if (lvl > 6) lvl = 6;
-            if (lvl <= 0) lvl = 1;
-
-            w.weight = lvl;
-
-            db.EWords.Attach(w);
+            EWord? w = db.EWords.Where(wrd => wrd.id == wordId).Select(w => new EWord { id = w.id, weight = w.weight }).FirstOrDefault();
+            w.weight += vec1;
             db.Entry(w).Property(x => x.weight).IsModified = true;
-            db.SaveChanges();
         }
 
         public IEnumerable<Sentence> GetSentences(int wordId)
@@ -150,7 +134,7 @@ namespace lngCollector.Services
 
                 if (ws.id == 0)// a new word - check if it already exists
                 {
-                    ws.weight = 1;
+                    ws.weight = 0;
                     db.Entry(ws).State = EntityState.Added;
                     return db.SaveChanges();
                 }
@@ -160,13 +144,49 @@ namespace lngCollector.Services
             }
         }
 
-        public int SaveTextDescriptionOnly(EWord ws)
+        public int SaveTextpartOnly(EWord ws)
         {
             using (var db = _dbFactory.Create())
             {
                 db.EWords.Attach(ws);
                 db.Entry(ws).Property(x => x.description).IsModified = true;
                 db.Entry(ws).Property(x => x.text).IsModified = true;
+                db.Entry(ws).Property(x => x.expressions).IsModified = true;
+                db.Entry(ws).Property(x => x.examples).IsModified = true;
+                db.Entry(ws).Property(x => x.meaning).IsModified = true;
+                db.Entry(ws).Property(x => x.meaning_verb).IsModified = true;
+                db.Entry(ws).Property(x => x.meaning_noun).IsModified = true;
+                return db.SaveChanges();
+            }
+        }
+
+        public Sentence? GetSentence(int id)
+        {
+            using (var db = _dbFactory.Create())
+            {
+                return db.Sentences.FirstOrDefault(x => x.Id == id);
+            }
+        }
+
+        public int SaveSentence(Sentence s)
+        {
+            using (var db = _dbFactory.Create())
+            {
+                db.Sentences.Attach(s);
+                db.Entry(s).Property(x => x.Text).IsModified = true;
+                return db.SaveChanges();
+            }
+        }
+
+        public int UpdateWeights()
+        {
+            using (var db = _dbFactory.Create())
+            {
+                var r = db.EWords.Select(wrd => new EWord { id = wrd.id, weight = db.Sentences.Count(x => x.WordId == wrd.id) });
+                foreach (var item in r)
+                {
+                    db.Entry(item).Property(x => x.weight).IsModified = true;
+                }
                 return db.SaveChanges();
             }
         }

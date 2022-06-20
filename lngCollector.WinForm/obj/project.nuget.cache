@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BauCVpbwR1PhhHrwL6IcgLfak1P8Ajb0uJK4Y1fgqCchAlJYlwx+sjBHWO+7s1fDQv86hVx80OCbc91zxSoccQ==",
+  "dgSpecHash": "9PQfm5VODgfw0dzcuJC5/FC8ne9TUfBOM77nfq3BBpgF8jxygSo9yKIUHM9Zdc8970LK3DMfWDHjrFmL/U2+Zw==",
   "success": true,
-  "projectFilePath": "e:\\prj\\c#\\lngCollector\\lngCollector.WinForm\\lngCollector.WinForm.csproj",
+  "projectFilePath": "E:\\prj\\c#\\lngCollector\\lngCollector.WinForm\\lngCollector.WinForm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alesh\\.nuget\\packages\\costura.fody\\5.7.0\\costura.fody.5.7.0.nupkg.sha512",
     "C:\\Users\\alesh\\.nuget\\packages\\fody\\6.5.5\\fody.6.5.5.nupkg.sha512",

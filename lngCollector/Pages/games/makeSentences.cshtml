@@ -22,8 +22,10 @@
     </div>
 </div>
 
-<span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">WORD LEVEL : @Model.Word.weight</span>
-<span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">@Model.Sentences.Count() snts</span>
+@*<span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">WORD LEVEL : @Model.Word.weight</span>
+<span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">@Model.Sentences.Count() snts</span>*@
+
+<span class="badge rounded-pill @(LvlMarker.getLevel(Model.Word))">Word weight: @Model.Sentences.Count()</span>
 
 <br>Make sentences game for "<b>@Model.Word.text</b>"
 
@@ -48,17 +50,14 @@
 <div class="row">
     <div class="col">
         <div class="alert alert-success">
-            @foreach (var item in @Model.Sentences)
+            @foreach (var item in Model.Sentences)
             {
-
-                <div class="btn-group" role="group" aria-label="snt_work">
-
-                    <a href="#" class="btn badge bg-info">E</a>
+@*                <div class="btn-group" role="group" aria-label="snt_work">
+                    <a asp-page="/tools/sentenceEdit" asp-route-id="@item.Id" class="btn badge bg-info">E</a>
                     <a asp-page-handler="RemoveSentence" asp-route-id="@Model.Word.id" asp-route-sentid="@item.Id" class="btn badge bg-danger">X</a>
+                </div>*@
 
-                </div>
-
-
+                <a asp-page="/tools/sentenceEdit" asp-route-id="@item.Id" class="btn badge bg-info">E</a>
 
                 @(c++)
 

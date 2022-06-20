@@ -13,5 +13,7 @@ namespace lngCollector.Model
         [Column("word_id")]
         public int WordId { get; set; }
         public string Text { get; set; }
+        public DateTime? date { get; set; }
+        public int? user_id { get; set; }
     }
 }

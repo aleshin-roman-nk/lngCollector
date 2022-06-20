@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {}
+    "E:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {}
   },
   "projects": {
-    "e:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
+    "E:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
+        "projectUniqueName": "E:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
         "projectName": "lngCollector.Model",
-        "projectPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
+        "projectPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
         "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
-        "outputPath": "e:\\prj\\c#\\lngCollector\\lngCollector.Model\\obj\\",
+        "outputPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

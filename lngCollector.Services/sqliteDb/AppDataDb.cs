@@ -12,7 +12,7 @@ namespace lngCollector.Services.sqliteDb
     {
         string _path;
 
-        public AppDataDb(string path)
+        public AppDataDb(string path): base()
         {
             _path = path;
         }
@@ -20,10 +20,13 @@ namespace lngCollector.Services.sqliteDb
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite($"Filename={_path}");
+            //optionsBuilder.LogTo(Console.WriteLine);
         }
 
         public DbSet<EWord> EWords { get; set; }
         public DbSet<Lng> Lngs { get; set; }
         public DbSet<Sentence> Sentences { get; set; }
+        public DbSet<Matrix> Matrixs { get; set; }
+        //public DbSet<User>
     }
 }

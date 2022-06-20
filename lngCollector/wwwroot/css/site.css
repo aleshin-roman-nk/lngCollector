@@ -44,8 +44,8 @@ body {
 }
 
 .mtrxItem {
-    width: 10px; /* or whatever width you want. */
-    height: 30px;
+    width: 40px;
+    height: 35px;
     border-right: 1px solid #808080;
     border-left: 1px solid #808080;
     border-top: 1px solid #808080;
@@ -62,32 +62,39 @@ body {
 
 .cLevel0 {
     background: #ffffff;
+    text-align: center;
 }
 
 .cLevel1 {
     background: #ff0000;
+    text-align: center;
 }
 
 .cLevel2 {
     background: #ff6a00;
+    text-align: center;
 }
 
 .cLevel3 {
     background: #ffd800;
     color: #435100;
+    text-align: center;
 }
 
 .cLevel4 {
     background: #00ff21;
     color: #000000;
+    text-align: center;
 }
 
 .cLevel5 {
     background: #00ffff;
     color: #0026ff;
+    text-align: center;
 }
 
 .cLevel6 {
     background: #9f00ff;
     color: #ffd800;
+    text-align: center;
 }
