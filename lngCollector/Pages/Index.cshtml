@@ -2,11 +2,14 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+
+    string person = User.Identity.IsAuthenticated ? @Model.Nme : "guest!!!";
 }
 
 <div class="row text-center">
     <div class="col">
         <h1 class="display-4">Language Collector</h1>
-        <h3>Click <a class="btn btn-success" href="/W/Words">here</a> to start collecting languages</h3>
+        <h2>Hello @person!!!</h2>
+        @*<h3>Click <a class="btn btn-success" href="/W/Words">here</a> to start collecting languages</h3>*@
     </div>
 </div>

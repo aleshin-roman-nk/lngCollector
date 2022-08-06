@@ -1,3 +1,4 @@
 {
-  "path": "..\db\lng.db"
+  "path_db_file": "..\db\lng.db",
+  "path" : "d:\db"
 }

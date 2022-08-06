@@ -12,7 +12,7 @@ namespace lngCollector.Model
         public string name { get; set; }
         public string email { get; set; }
         public string password { get; set; }
-        public bool email_verified { get; set; }
-        public string email_verification_code { get; set; }
+        public bool? email_verified { get; set; }
+        public string? email_verification_code { get; set; }
     }
 }

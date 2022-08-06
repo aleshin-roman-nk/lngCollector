@@ -14,7 +14,10 @@ namespace lngCollector.Pages
 
         public void OnGet()
         {
-            
+            Nme = User.Identity.Name;
         }
+
+        [BindProperty]
+        public string Nme { get; set; }
     }
 }

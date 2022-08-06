@@ -1,0 +1,9 @@
+﻿
+@if(User.Identity.IsAuthenticated){
+    <a class="ml-2 btn btn-link" asp-page="/users/useraccount">@User.Identity.Name</a>
+    <a class="ml-2 btn btn-link" asp-page="/users/logout">Logout</a>
+}
+else{
+    <a class="btn btn-link" asp-page="/users/login">Login</a>
+    <a class="btn btn-link" asp-page="/users/registration">Register</a>
+}

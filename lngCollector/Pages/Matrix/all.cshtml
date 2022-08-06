@@ -1,0 +1,80 @@
+﻿@page
+@using Microsoft.AspNetCore.Components
+@model lngCollector.Pages.WordsNode.allModel
+@{
+    string percent(int curr, int max)
+    {
+        int res = Decimal.ToInt32(((decimal)curr / (decimal)max * 100.0m));
+
+        return res.ToString();
+    }
+
+}
+
+<h3>Matrixes</h3>
+
+<div class="col-2">
+    <a asp-page="/lngactions" class="btn btn-outline-info">..</a>
+</div>
+
+<hr/>
+
+<div>
+    <a asp-page="/matrix/edit" asp-page-handler="create" class="btn">
+        <img src="/img/icons8-plus-math-48.png" />
+    </a>
+
+    <a asp-page="/matrix/deletedview" class="btn">
+        <img src="/img/icons8-recycle-bin-48.png" />
+    </a>
+</div>
+
+<hr />
+
+<div class="row">
+    @foreach (var item in Model.Matrices)
+    {
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card-deck">
+
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+
+                    <div class="card-header">
+
+                        <div class="row">
+
+                            <div class="col-2">
+                                <a asp-page="/matrix/detail" asp-route-id="@item.id" class="btn btn-outline-warning">...</a>
+                            </div>
+
+                            <div class="col-8">
+                                @item.name
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-text">
+                            words : @item.word_count
+                            @if(item.word_count > 0)
+                            {
+                                 <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-label="Info example" style="width: @percent(item.snt_count_actually, item.snt_count_target)%" aria-valuenow="@item.snt_count_actually" aria-valuemin="0" aria-valuemax="@item.snt_count_target">
+                                    </div>
+                                    <div class="progress-bar-title">@item.snt_count_actually / @item.snt_count_target</div>
+                                </div>                               
+                            }
+                        </div>
+                        <hr />
+                        <p class="card-text text-truncate">
+                            @item.content_short
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }
+</div>

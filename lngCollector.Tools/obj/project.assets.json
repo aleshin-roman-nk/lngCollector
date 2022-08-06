@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
+      "projectUniqueName": "D:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
       "projectName": "lngCollector.Tools",
-      "projectPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
+      "projectPath": "D:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
       "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
-      "outputPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Tools\\obj\\",
+      "outputPath": "D:\\prg\\lngCollector\\lngCollector.Tools\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -106,7 +106,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,1 +1,20 @@
 dotnet publish -c release -o /app
+dotnet publish -c release -o ../app - если хочу чтобы опубликовалось рядом с lngCollector 
+
+docker build -t img .
+
+docker run --rm -d -p 8080:80 -v d:\db\:/db --name srv img
+docker run -it -p 8080:80 -v d:\db\:/db --name srv img
+
+>>> 24-07-2022 14:18
+docker run --rm -d -p 80:80 -v d:\db\:/db --name srv img
+
+You intended to execute a .NET application: The application 'lngCollector.dll' does not exist.
+
+создание образа для запушивания на хаб
+docker build -t aleshinrv01071979/lng-collector .
+docker push aleshinrv01071979/lng-collector:latest
+
+docker pull aleshinrv01071979/lng-collector
+
+docker run --rm -d -p 80:80 -v d:\db\:/db --name srv aleshinrv01071979/lng-collector

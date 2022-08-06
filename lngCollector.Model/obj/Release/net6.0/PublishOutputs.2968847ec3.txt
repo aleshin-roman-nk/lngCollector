@@ -1,0 +1,3 @@
+d:\app\lngCollector.Model.dll
+d:\app\lngCollector.Model.deps.json
+d:\app\lngCollector.Model.pdb

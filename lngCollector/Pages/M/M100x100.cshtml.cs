@@ -14,7 +14,7 @@ namespace lngCollector.Pages.M
             _db = db;
         }
 
-        public void OnGet()
+        public void OnGet(/*int matrixid*/)// the matrix id goes here
         {
             var wcollection = _db.GetAll().ToArray();
 

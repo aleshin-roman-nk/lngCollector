@@ -20,7 +20,8 @@ namespace lngCollector.Model
         public string? name { get; set; }
         public string? content { get; set; }
         public string? content_short { get; set; }
-        public ICollection<EWord> EWords { get; set; }
+        public ICollection<EWord> EWords { get; set; }// На самом деле матрица содержик коллекцию не слов, а узлов упражнений.
+        // каждый узел 1-1 ссылается на слово. Вся информация о предложениях содержится в этом узле, а не слове.
         public DateTime? date { get; set; }
         public bool isdeleted { get; set; }
 

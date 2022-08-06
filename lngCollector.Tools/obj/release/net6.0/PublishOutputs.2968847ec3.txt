@@ -1,0 +1,4 @@
+d:\app\lngCollector.Tools.dll
+d:\app\lngCollector.Tools.deps.json
+d:\app\lngCollector.Tools.pdb
+d:\app\Newtonsoft.Json.dll

@@ -12,17 +12,18 @@ LOGIN Page
     </div>
 }
 
+
 <div class="container border " style="padding:20px;">
     <form method="post">
         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
 
         <div class="form-group row">
-            <span class="text-danger" asp-validation-for="Usr.Name"></span>
+            <span class="text-danger" asp-validation-for="Usr.Email"></span>
             <div class="col-2">
-                <label asp-for="Usr.Name"></label>
+                <label asp-for="Usr.Email"></label>
             </div>
             <div class="col-5">
-                <input type="text" asp-for="Usr.Name" class="form-control" />
+                <input type="email" asp-for="Usr.Email" class="form-control" />
             </div>
         </div>
 

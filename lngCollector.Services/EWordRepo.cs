@@ -26,7 +26,7 @@ namespace lngCollector.Services
             using (var db = _dbFactory.Create())
             {
                 res = db.Sentences.Where(s => s.WordId == wordId);
-                db.Sentences.Add(new Sentence { Text = txt, WordId = wordId, date = DateTime.Now });
+                db.Sentences.Add(new Sentence { Text = txt, WordId = wordId, date = DateTime.Now, user_id = db.UserInfo.UID });
 
                 increaseWordWeight(wordId, 1, db);
                 db.SaveChanges();
@@ -42,7 +42,7 @@ namespace lngCollector.Services
                 if (ws.id == 0)// a new word - check if it already exists
                 {
                     ws.weight = 0;
-                    if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text)))
+                    if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text) && x.user_id == db.UserInfo.UID))
                         throw new InvalidOperationException($"Word '{ws.text}' already exists");
 
                     db.Entry(ws).State = EntityState.Added;
@@ -102,11 +102,19 @@ namespace lngCollector.Services
             }
         }
 
+        public IEnumerable<EWord> GetPart(int position, int count)
+        {
+            using (var db = _dbFactory.Create())
+            {
+                return db.EWords.Where(x => x.user_id == db.UserInfo.UID).ToList();
+            }
+        }
+
         public IEnumerable<EWord> GetAll()
         {
             using (var db = _dbFactory.Create())
             {
-                return db.EWords.ToList();
+                return db.EWords.Where(x => x.user_id == db.UserInfo.UID).ToList();
             }
         }
 
@@ -129,7 +137,7 @@ namespace lngCollector.Services
         {
             using(var db = _dbFactory.Create())
             {
-                if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text) && x.id != ws.id ))
+                if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text) && x.id != ws.id && x.user_id == db.UserInfo.UID))
                     throw new InvalidOperationException($"Word '{ws.text}' already exists");
 
                 if (ws.id == 0)// a new word - check if it already exists

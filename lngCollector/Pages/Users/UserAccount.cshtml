@@ -1,0 +1,110 @@
+﻿@page
+@model lngCollector.Pages.Users.UserAccountModel
+@{
+    string isconfemail = Model.UserA.email_verified.Value ? "" : " - email is not confirmed";
+}
+
+<h1>User profile @isconfemail</h1>
+
+
+@if (!string.IsNullOrEmpty(Model.Message))
+{
+    <div class="alert alert-success" role="alert">
+        @Model.Message
+    </div>
+}
+
+<div class="container border" style="padding:20px;">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+        <div class="form-group row">
+            <span class="text-danger" asp-validation-for="UserA.name"></span>
+            <div class="col-2">
+                <label asp-for="UserA.name"></label>
+            </div>
+            <div class="col-5">
+                <input type="text" asp-for="UserA.name" class="form-control" />
+            </div>
+
+            <div class="col-2">
+                <input type="submit" value="Save" class="btn btn-link" />
+            </div>
+        </div>
+    </form>
+
+
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+
+        <div class="form-group row mt-2">
+            <input type="hidden" asp-for="UserA.email_verified" />
+            <input type="hidden" asp-for="UserA.id" />
+            <span class="text-danger" asp-validation-for="UserA.email"></span>
+
+            <div class="col-2">
+                <label asp-for="UserA.email"></label>
+            </div>
+            <div class="col-5">
+                <input type="email" asp-for="UserA.email" class="form-control" />
+            </div>
+
+            <div class="col-2">
+                <input type="submit" value="Save" asp-page-handler="ChangeEmail" class="btn btn-link" />
+            </div>
+
+        </div>
+    </form>
+
+    @if (!Model.UserA.email_verified.Value)
+    {
+        <div class="row mt-2">
+
+            <div class="col-2">
+                Email confirmation
+            </div>
+
+            <form method="post" class="col">
+                <input type="hidden" asp-for="UserA.email" />
+                <input type="hidden" asp-for="UserA.id" />
+                <input type="hidden" asp-for="UserA.email_verification_code" />
+                <div class="col">
+                    <input type="text" asp-for="confirmation_code" class="form-control" />
+                </div>
+                <div class="col">
+                    <input type="submit" asp-page-handler="EnterCode" class="btn btn-link" value="Enter code" />
+                </div>
+            </form>
+
+            <form method="post" class="col">
+                <input type="hidden" asp-for="UserA.email" />
+                <input type="hidden" asp-for="UserA.id" />
+                <input type="hidden" asp-for="UserA.email_verified" />
+
+                <input type="submit" asp-page-handler="SendCode" class="btn btn-link" value="Send code" />
+            </form>
+
+        </div>
+
+    }
+
+    <div class="row mt-2">
+        <div class="col-2">Password</div>
+        <div class="col-2">
+            <a class="btn btn-link" asp-page="/Users/ChangePassword">Change</a>
+        </div>
+    </div>
+
+@*    <form method="post">
+        <div class="form-group row mt-2">
+            <span class="text-danger" asp-validation-for="UserA.password"></span>
+            <div class="col-2">
+                <label asp-for="UserA.password"></label>
+            </div>
+            <div class="col-5">
+                <input type="password" asp-for="UserA.password" class="form-control" />
+            </div>
+        </div>
+    </form>*@
+
+</div>

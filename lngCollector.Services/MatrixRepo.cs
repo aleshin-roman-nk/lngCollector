@@ -53,7 +53,7 @@ namespace lngCollector.Services
             using (var db = _dbFactory.Create())
             {
                 var matrxs = db.Matrixs
-                    .Where(m => !m.isdeleted)
+                    .Where(m => !m.isdeleted && m.user_id == db.UserInfo.UID)
                     .Select(m => new Matrix
                     {
                         id = m.id,

@@ -24,7 +24,7 @@ class DbConfigSQLiteWeb : IDbConfig
 {
     string _path;
 
-    public string path => _path;
+    public string path_db_file => _path;
     public DbConfigSQLiteWeb()
     {
         var fle = File.ReadAllText("lng-config-db.json", Encoding.UTF8);

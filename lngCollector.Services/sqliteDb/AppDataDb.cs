@@ -12,10 +12,13 @@ namespace lngCollector.Services.sqliteDb
     {
         string _path;
 
-        public AppDataDb(string path): base()
+        public AppDataDb(string path, IUserInfo userInfo) : base()
         {
             _path = path;
+            UserInfo = userInfo;
         }
+
+        public IUserInfo UserInfo { get; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -27,6 +30,6 @@ namespace lngCollector.Services.sqliteDb
         public DbSet<Lng> Lngs { get; set; }
         public DbSet<Sentence> Sentences { get; set; }
         public DbSet<Matrix> Matrixs { get; set; }
-        //public DbSet<User>
+        public DbSet<User> Users { get; set; }
     }
 }

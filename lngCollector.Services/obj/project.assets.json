@@ -1176,11 +1176,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\prj\\c#\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj",
+      "projectUniqueName": "D:\\prg\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj",
       "projectName": "lngCollector.Services",
-      "projectPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj",
+      "projectPath": "D:\\prg\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj",
       "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
-      "outputPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Services\\obj\\",
+      "outputPath": "D:\\prg\\lngCollector\\lngCollector.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1197,11 +1197,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
-              "projectPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj"
+            "D:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
+              "projectPath": "D:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj"
             },
-            "E:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {
-              "projectPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj"
+            "D:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {
+              "projectPath": "D:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj"
             }
           }
         }
@@ -1244,7 +1244,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

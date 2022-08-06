@@ -1,0 +1,9 @@
+﻿<svg width="400" height="800" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="400" height="800" stroke="black" stroke-width="2"/>
+<filter id="blurMe"><feGaussianBlur in= "SourceGraphic" stdDeviation = "1" /></filter>
+<filter id="blurMe1"><feGaussianBlur in= "SourceGraphic" stdDeviation = "5" /></filter>
+<circle cx = "195" cy = "113" r = "2" fill = "#58D68D" filter="url(#blurMe)"/>
+<circle cx = "232" cy = "408" r = "2" fill = "#58D68D" filter="url(#blurMe)"/>
+<circle cx = "108" cy = "132" r = "2" fill = "#58D68D" filter="url(#blurMe)"/>
+<circle cx = "327" cy = "390" r = "2" fill = "#58D68D" filter="url(#blurMe)"/>
+</svg>

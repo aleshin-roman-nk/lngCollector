@@ -1,10 +1,12 @@
 using lngCollector.Model;
 using lngCollector.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace lngCollector.Pages.tools
 {
+    [Authorize]
     public class sentenceEditModel : PageModel
     {
         private readonly IEWordRepo db;

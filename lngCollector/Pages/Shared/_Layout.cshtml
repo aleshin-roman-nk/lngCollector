@@ -27,19 +27,17 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/W/Words">Words</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/wg/matrixesview">Matrixes</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/M/M100x100">Matrix 100x100</a>
-                        </li>
-
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/lngactions">Go</a>
+                            </li> 
+                        }
                     </ul>
+                </div>
+
+                <div class="mr-2">
+                    <partial name="_LoginStatePartial"></partial>
                 </div>
 
             </div>
@@ -47,7 +45,7 @@
 
     </header>
 
-@*    <div class="container containerBordered">*@
+    @*    <div class="container containerBordered">*@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

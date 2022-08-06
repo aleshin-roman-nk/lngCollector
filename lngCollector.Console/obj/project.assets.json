@@ -1228,11 +1228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\prj\\c#\\lngCollector\\lngCollector.Console\\lngCollector.Console.csproj",
+      "projectUniqueName": "D:\\prg\\lngCollector\\lngCollector.Console\\lngCollector.Console.csproj",
       "projectName": "lngCollector.Console",
-      "projectPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Console\\lngCollector.Console.csproj",
+      "projectPath": "D:\\prg\\lngCollector\\lngCollector.Console\\lngCollector.Console.csproj",
       "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
-      "outputPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Console\\obj\\",
+      "outputPath": "D:\\prg\\lngCollector\\lngCollector.Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1249,8 +1249,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\prj\\c#\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj": {
-              "projectPath": "E:\\prj\\c#\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj"
+            "D:\\prg\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj": {
+              "projectPath": "D:\\prg\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj"
             }
           }
         }
@@ -1285,7 +1285,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

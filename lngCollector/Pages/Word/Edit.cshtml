@@ -1,0 +1,119 @@
+﻿@page "{matrixid?}/{handler}/{id?}"
+@using lngCollector.Tools
+@model lngCollector.Pages.W.EditModel
+@{
+    ViewData["Title"] = $"Edit::'{Model.Word.text}'";
+}
+
+@if (!string.IsNullOrEmpty(Model.Error))
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.Error
+    </div>
+}
+
+<form method="post" class="mt-3" enctype="multipart/form-data">
+    <!--Создаём скрытое поле для параметра ID-->
+    <input type="hidden" asp-for="Word.id"/>
+    <input type="hidden" asp-for="Word.lng_id"/>
+    <input type="hidden" asp-for="Word.date"/>
+    <input type="hidden" asp-for="Word.MatrixId"/>
+    <input type="hidden" asp-for="Word.user_id"/>
+
+    <!--Добавляем поля редактирования-->
+    <div class="row justify-content-center m-3">
+        <div class="col">
+            <div class="card">
+
+                <div class="card-header">
+                    <!--Добавляем поле редактирования имени-->
+                    <div class="form-group row">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">Text</span>
+                            <input asp-for="Word.text" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-body">
+
+                    <!--List group-->
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-meaning-list" data-bs-toggle="list" href="#list-meaning" role="tab" aria-controls="list-home">meaning</a>
+                                <a class="list-group-item list-group-item-action" id="list-meaning_noun-list" data-bs-toggle="list" href="#list-meaning_noun" role="tab" aria-controls="list-meaning_noun">meaning_noun</a>
+                                <a class="list-group-item list-group-item-action" id="list-meaning_verb-list" data-bs-toggle="list" href="#list-meaning_verb" role="tab" aria-controls="list-messages">meaning_verb</a>
+                                <a class="list-group-item list-group-item-action" id="list-expressions-list" data-bs-toggle="list" href="#list-expressions" role="tab" aria-controls="list-settings">expressions</a>
+                                <a class="list-group-item list-group-item-action" id="list-examples-list" data-bs-toggle="list" href="#list-examples" role="tab" aria-controls="list-settings">examples</a>
+                                <a class="list-group-item list-group-item-action" id="list-description-list" data-bs-toggle="list" href="#list-description" role="tab" aria-controls="list-settings">description</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+
+                                <div class="tab-pane fade show active" id="list-meaning" role="tabpanel" aria-labelledby="list-meaning-list">
+                                    <div class="mb-3">
+                                        <label asp-for="Word.meaning" class="form-label">meaning</label>
+                                        <textarea asp-for="Word.meaning" class="form-control" rows="5">@Model.Word.meaning</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="list-meaning_noun" role="tabpanel" aria-labelledby="list-meaning_noun-list">
+                                    <label asp-for="Word.meaning_noun" class="form-label">meaning_noun</label>
+                                    <textarea asp-for="Word.meaning_noun" class="form-control" rows="5">@Model.Word.meaning_noun</textarea>
+                                </div>
+
+                                <div class="tab-pane fade" id="list-meaning_verb" role="tabpanel" aria-labelledby="list-meaning_verb-list">
+                                    <label asp-for="Word.meaning_verb" class="form-label">meaning_verb</label>
+                                    <textarea asp-for="Word.meaning_verb" class="form-control" rows="5">@Model.Word.meaning_verb</textarea>
+                                </div>
+
+                                <div class="tab-pane fade" id="list-expressions" role="tabpanel" aria-labelledby="list-expressions-list">
+                                    <label asp-for="Word.expressions" class="form-label">EXPRESSIONS</label>
+                                    <textarea asp-for="Word.expressions" class="form-control" rows="5">@Model.Word.expressions</textarea>
+                                </div>
+
+                                <div class="tab-pane fade" id="list-examples" role="tabpanel" aria-labelledby="list-examples-list">
+                                    <label asp-for="Word.examples" class="form-label">EXAMPLES</label>
+                                    <textarea asp-for="Word.examples" class="form-control" rows="5">@Model.Word.examples</textarea>
+                                </div>
+
+                                <div class="tab-pane fade" id="list-description" role="tabpanel" aria-labelledby="list-description-list">
+                                    <label asp-for="Word.description" class="form-label">DESCRIPTION</label>
+                                    <textarea asp-for="Word.description" class="form-control" rows="5">@Model.Word.description</textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end: List group -->
+                    <hr />
+                    <div class="row">
+                        <div class="col">
+                            <div class="card-footer text-center" style="background-color: rgba(0,0,0,.25)">
+                                @if(Model.Word.id == 0)
+                                {
+                                    <a asp-page="/wg/matrixdetail" asp-route-ID="@Model.Word.MatrixId" class="btn btn-secondary">Back</a>
+                                }
+                                else
+                                {
+                                    <a asp-page="/Word/Detail" asp-route-ID="@Model.Word.id" class="btn btn-secondary">Back</a>
+                                }
+                                <button type="submit" class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</form>
+
+

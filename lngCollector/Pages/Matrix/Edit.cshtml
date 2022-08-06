@@ -1,0 +1,50 @@
+﻿@page "{handler?}/{id?}"
+@using lngCollector.Tools
+@model lngCollector.Pages.Matrix.EditModel
+@{
+}
+
+@Model.operation
+
+@if (!string.IsNullOrEmpty(Model.Error))
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.Error
+    </div>
+}
+
+@*<div class="card">
+    <div class="card-body">
+        @Model.Matrix.content
+    </div>
+</div>*@
+
+<form method="post" class="mt-3" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Matrix.id" />
+    <input type="hidden" asp-for="Matrix.lng_id" />
+    <input type="hidden" asp-for="Matrix.user_id" />
+
+    @*    <input asp-for="Matrix.name" class="form-text" placeholder="@Model.Matrix.name" />*@
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">Name</span>
+        <input asp-for="Matrix.name" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </div>
+
+    <textarea asp-for="Matrix.content" class="form-control" rows="5">@Model.Matrix.content</textarea>
+
+@*    <p>
+        @Model.Matrix.content
+    </p>*@
+
+    <div class="row">
+        <div class="col">
+            <div class="card-footer text-center" style="background-color: rgba(0, 0, 0, 0.25);">
+                <button type="submit" class="btn btn-success">Save</button>
+                <button type="submit" class="btn btn-outline-danger" asp-page-handler="Delete">Delete</button>
+                <a asp-page="/matrix/detail" asp-route-id="@Model.Matrix.id" class="btn btn-outline-secondary">Back</a>
+            </div>
+        </div>
+    </div>
+
+</form>
