@@ -8,117 +8,117 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = lngCollector
 build_property.RootNamespace = lngCollector
-build_property.ProjectDir = D:\prg\lngCollector\lngCollector\
+build_property.ProjectDir = E:\prj\c#\lngCollector\lngCollector\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\prg\lngCollector\lngCollector
+build_property.MSBuildProjectDirectory = E:\prj\c#\lngCollector\lngCollector
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Error.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/games/makeSentences.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/games/makeSentences.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZ2FtZXNcbWFrZVNlbnRlbmNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Index.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/lngActions.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/lngActions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG5nQWN0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/all.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Matrix/all.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XGFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/DeletedView.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Matrix/DeletedView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XERlbGV0ZWRWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/Detail.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Matrix/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/Edit.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Matrix/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/M100x100.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Matrix/M100x100.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XE0xMDB4MTAwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/NotFound.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Shared/_LoginStatePartial.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Shared/_LoginStatePartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblN0YXRlUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/tools/sentenceEdit.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/tools/sentenceEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdG9vbHNcc2VudGVuY2VFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/total/cosmos.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/total/cosmos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdG90YWxcY29zbW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Users/ChangePassword.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Users/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Users/LngSettings.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Users/LngSettings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG5nU2V0dGluZ3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Users/Login.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Users/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Users/Logout.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Users/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9nb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Users/Registration.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Users/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcUmVnaXN0cmF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Users/UserAccount.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Users/UserAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlckFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Word/ConfirmDelete.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Word/ConfirmDelete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29yZFxDb25maXJtRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Word/Detail.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Word/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29yZFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Word/Edit.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Word/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29yZFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Word/Words.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Word/Words.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29yZFxXb3Jkcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/_ViewImports.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/_ViewStart.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Shared/_Layout.cshtml]
+[E:/prj/c\#/lngCollector/lngCollector/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-oc9vdcd4q0

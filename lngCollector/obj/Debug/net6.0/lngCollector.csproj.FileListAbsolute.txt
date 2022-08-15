@@ -187,3 +187,12 @@ D:\prg\lngCollector\lngCollector\bin\Debug\net6.0\System.Drawing.Common.dll
 D:\prg\lngCollector\lngCollector\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 D:\prg\lngCollector\lngCollector\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 D:\prg\lngCollector\lngCollector\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\MailKit.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\MimeKit.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\BouncyCastle.Crypto.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\prj\c#\lngCollector\lngCollector\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EbKNcnbwMlzpWfkJ4eYfBKLJQmIyAVL/DqO6LM9Hmdd90KVLYdF0mK5jNAtYnKHcXzEG9VL6S9qLazJBljL3Wg==",
+  "dgSpecHash": "+YEyBl4a7EcmJEysDyBvMmQFJT4EVqMNt2CXHYjhGcmrya2aZ8MajQEISbifhQwiYNyKsFYtZxibrywig4sVhQ==",
   "success": true,
-  "projectFilePath": "D:\\prg\\lngCollector\\lngCollector.Console\\lngCollector.Console.csproj",
+  "projectFilePath": "E:\\prj\\c#\\lngCollector\\lngCollector.Console\\lngCollector.Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alesh\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\alesh\\.nuget\\packages\\microsoft.data.sqlite\\6.0.3\\microsoft.data.sqlite.6.0.3.nupkg.sha512",
