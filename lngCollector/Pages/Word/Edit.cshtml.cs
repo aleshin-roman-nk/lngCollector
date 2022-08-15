@@ -1,32 +1,44 @@
-using lngCollector.Model;
+﻿using lngCollector.Model;
 using lngCollector.Services;
 using lngCollector.Tools;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Security.Claims;
 
-namespace lngCollector.Pages.W
+namespace lngCollector.Pages.Word
 {
     [Authorize]
     public class EditModel : PageModel
     {
         IEWordRepo repo;
-        public EditModel(IEWordRepo r)
+        private readonly ILngRepo lngrepo;
+
+        public EditModel(IEWordRepo r, ILngRepo lngrepo)
         {
             repo = r;
+            this.lngrepo = lngrepo;
         }
 
         public void OnGetCreate(int matrixid)
         {
             int id = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
-            Console.WriteLine(id);
-            Word = new EWord { MatrixId = matrixid, weight = 0, lng_id = 0, date = DateTime.Now, user_id = id };
+            Options = lngrepo.All().Select(x => new SelectListItem { Value = x.id.ToString(), Text = x.name }).ToList();
+
+            // Take lng_id from the user values table and put it for the new user.
+
+            Word = new EWord { MatrixId = matrixid, weight = 0, date = DateTime.Now, user_id = id };
         }
 
         public IActionResult OnGetEdit(int id)
         {
             Word = repo.Get(id);
+
+            Options = lngrepo.All().Select(x => new SelectListItem { Value = x.id.ToString(), Text = x.name }).ToList();
+
+            //foreach (var item in lngrepo.All())
+            //    Options.Add(new SelectListItem { Value = item.id.ToString(), Text = item.name });
 
             if (Word == null)
                 return RedirectToPage("/NotFound");
@@ -76,5 +88,8 @@ namespace lngCollector.Pages.W
         [BindProperty]
         public EWord Word { get; set; }
         public string Error { get; set; }
+
+        [BindProperty]
+        public List<SelectListItem> Options { get; set; }
     }
 }

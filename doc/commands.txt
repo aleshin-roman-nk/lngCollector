@@ -18,3 +18,4 @@ docker push aleshinrv01071979/lng-collector:latest
 docker pull aleshinrv01071979/lng-collector
 
 docker run --rm -d -p 80:80 -v d:\db\:/db --name srv aleshinrv01071979/lng-collector
+docker run --rm -d -p 80:80 -v /root/db/:/db --name srv aleshinrv01071979/lng-collector

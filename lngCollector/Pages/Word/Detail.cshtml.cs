@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Text;
 
-namespace lngCollector.Pages.W
+namespace lngCollector.Pages.Word
 {
     [Authorize]
     public class DetailModel : PageModel

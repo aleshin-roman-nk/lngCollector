@@ -18,6 +18,7 @@ builder.Services.AddTransient<IEWordRepo, EWordRepo>();
 builder.Services.AddTransient<IMatrixRepo, MatrixRepo>();
 builder.Services.AddTransient<IUserAuthRepo, UserAuthRepo>();
 builder.Services.AddTransient<ICosmosRepo, CosmosRepo>();
+builder.Services.AddTransient<ILngRepo, LngRepo>();
 
 builder.Services.Configure<RouteOptions>(options =>
 {

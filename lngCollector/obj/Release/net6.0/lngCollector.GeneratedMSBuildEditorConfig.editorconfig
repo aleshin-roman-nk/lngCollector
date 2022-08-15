@@ -27,12 +27,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/prg/lngCollector/lngCollector/Pages/M/cosmos.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTVxjb3Ntb3MuY3NodG1s
+[d:/prg/lngCollector/lngCollector/Pages/lngActions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG5nQWN0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/prg/lngCollector/lngCollector/Pages/M/M100x100.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTVxNMTAweDEwMC5jc2h0bWw=
+[d:/prg/lngCollector/lngCollector/Pages/Matrix/all.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XGFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/prg/lngCollector/lngCollector/Pages/Matrix/DeletedView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XERlbGV0ZWRWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/prg/lngCollector/lngCollector/Pages/Matrix/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/prg/lngCollector/lngCollector/Pages/Matrix/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/prg/lngCollector/lngCollector/Pages/Matrix/M100x100.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XE0xMDB4MTAwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [d:/prg/lngCollector/lngCollector/Pages/NotFound.cshtml]
@@ -49,6 +65,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [d:/prg/lngCollector/lngCollector/Pages/tools/sentenceEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdG9vbHNcc2VudGVuY2VFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[d:/prg/lngCollector/lngCollector/Pages/total/cosmos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdG90YWxcY29zbW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [d:/prg/lngCollector/lngCollector/Pages/Users/ChangePassword.cshtml]
@@ -71,36 +91,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlckFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/prg/lngCollector/lngCollector/Pages/WG/DeletedMatrixesView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV0dcRGVsZXRlZE1hdHJpeGVzVmlldy5jc2h0bWw=
+[d:/prg/lngCollector/lngCollector/Pages/Word/ConfirmDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29yZFxDb25maXJtRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/prg/lngCollector/lngCollector/Pages/WG/MatrixDetail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV0dcTWF0cml4RGV0YWlsLmNzaHRtbA==
+[d:/prg/lngCollector/lngCollector/Pages/Word/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29yZFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/prg/lngCollector/lngCollector/Pages/WG/MatrixEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV0dcTWF0cml4RWRpdC5jc2h0bWw=
+[d:/prg/lngCollector/lngCollector/Pages/Word/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29yZFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[d:/prg/lngCollector/lngCollector/Pages/WG/MatrixesView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV0dcTWF0cml4ZXNWaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/prg/lngCollector/lngCollector/Pages/W/ConfirmDelete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV1xDb25maXJtRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/prg/lngCollector/lngCollector/Pages/W/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV1xEZXRhaWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/prg/lngCollector/lngCollector/Pages/W/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[d:/prg/lngCollector/lngCollector/Pages/W/Words.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV1xXb3Jkcy5jc2h0bWw=
+[d:/prg/lngCollector/lngCollector/Pages/Word/Words.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29yZFxXb3Jkcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [d:/prg/lngCollector/lngCollector/Pages/_ViewImports.cshtml]

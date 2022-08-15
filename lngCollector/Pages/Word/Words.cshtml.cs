@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace lngCollector.Pages.W
+namespace lngCollector.Pages.Word
 {
     [Authorize]
     public class WordsModel : PageModel

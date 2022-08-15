@@ -1,6 +1,6 @@
 ﻿@page
 @using lngCollector.Tools
-@model lngCollector.Pages.W.WordsModel
+@model lngCollector.Pages.Word.WordsModel
 @{
     ViewData["Title"] = "All words";
 
@@ -38,8 +38,8 @@
                         </td>
                         <td><b>@item.text</b></td>
                         <td>
-                            <a asp-page="/W/Detail" asp-route-ID="@item.id" class="btn btn-primary m-1">View</a>
-                            <a asp-page="/W/ConfirmDelete" asp-route-ID="@item.id" class="btn btn-danger m-1">Delete</a>
+                            <a asp-page="/Word/Detail" asp-route-ID="@item.id" class="btn btn-primary m-1">View</a>
+                            <a asp-page="/Word/ConfirmDelete" asp-route-ID="@item.id" class="btn btn-danger m-1">Delete</a>
                         </td>
                     </tr>
                 }

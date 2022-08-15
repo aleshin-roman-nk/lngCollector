@@ -3,7 +3,7 @@ using lngCollector.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace lngCollector.Pages.M
+namespace lngCollector.Pages.Matrix
 {
     public class M100x100Model : PageModel
     {

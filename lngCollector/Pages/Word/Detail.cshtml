@@ -1,6 +1,6 @@
 ﻿@page "{id}"
 @using System.Text
-@model lngCollector.Pages.W.DetailModel
+@model lngCollector.Pages.Word.DetailModel
 @{
     ViewData["Title"] = $"Detail::'{Model.Word.text}'";
 
@@ -60,8 +60,8 @@
 
 <div class="row m-3" style="background-color: rgba(0,0,0,.25)">
     <div class="col m-2">
-        <a asp-page="/wg/matrixdetail" asp-route-id="@Model.Word.MatrixId" class="btn btn-outline-secondary">Back</a>
-        <a asp-page="/W/Edit" asp-page-handler="edit" asp-route-ID="@Model.Word.id" asp-route-matrixid="@Model.Word.MatrixId" class="btn btn-primary">Edit</a>
+        <a asp-page="/matrix/detail" asp-route-id="@Model.Word.MatrixId" class="btn btn-outline-secondary">Back</a>
+        <a asp-page="/word/edit" asp-page-handler="edit" asp-route-ID="@Model.Word.id" asp-route-matrixid="@Model.Word.MatrixId" class="btn btn-primary">Edit</a>
         <a asp-page="/games/makeSentences" asp-route-ID="@Model.Word.id" class="btn btn-danger">Game</a>
     </div>
 </div>

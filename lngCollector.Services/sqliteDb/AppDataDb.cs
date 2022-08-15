@@ -1,4 +1,5 @@
 ﻿using lngCollector.Model;
+using lngCollector.Model.UserDt;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -31,5 +32,6 @@ namespace lngCollector.Services.sqliteDb
         public DbSet<Sentence> Sentences { get; set; }
         public DbSet<Matrix> Matrixs { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<UserValue> Variables { get; set; }
     }
 }

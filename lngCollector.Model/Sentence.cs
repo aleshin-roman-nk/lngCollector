@@ -15,5 +15,6 @@ namespace lngCollector.Model
         public string Text { get; set; }
         public DateTime? date { get; set; }
         public int? user_id { get; set; }
+        //public int? lng_id { get; set; }
     }
 }

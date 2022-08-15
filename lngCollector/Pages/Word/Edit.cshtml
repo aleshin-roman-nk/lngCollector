@@ -1,6 +1,6 @@
 ﻿@page "{matrixid?}/{handler}/{id?}"
 @using lngCollector.Tools
-@model lngCollector.Pages.W.EditModel
+@model lngCollector.Pages.Word.EditModel
 @{
     ViewData["Title"] = $"Edit::'{Model.Word.text}'";
 }
@@ -26,6 +26,13 @@
             <div class="card">
 
                 <div class="card-header">
+
+                    <div class="row mb-3">
+                        <div class="col-4">
+                            <select asp-for="Word.lng_id" asp-items="@Model.Options" class="form-select" aria-label="Default select example"></select>
+                        </div>
+                    </div>
+
                     <!--Добавляем поле редактирования имени-->
                     <div class="form-group row">
                         <div class="input-group mb-3">

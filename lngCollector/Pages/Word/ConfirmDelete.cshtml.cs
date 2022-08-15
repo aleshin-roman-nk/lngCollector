@@ -27,7 +27,7 @@ namespace lngCollector.Pages.W
 
             repo.Delete(word);
 
-            return RedirectToPage("Words");
+            return RedirectToPage("/matrix/detail", new { id = word.MatrixId });
         }
 
         public EWord Word { get; set; }
