@@ -22,3 +22,15 @@ E:\prj\c#\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.dl
 E:\prj\c#\lngCollector\lngCollector.Tools\obj\Debug\net6.0\refint\lngCollector.Tools.dll
 E:\prj\c#\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.pdb
 E:\prj\c#\lngCollector\lngCollector.Tools\obj\Debug\net6.0\ref\lngCollector.Tools.dll
+D:\prg\lngCollector\lngCollector.Tools\bin\Debug\net6.0\lngCollector.Tools.deps.json
+D:\prg\lngCollector\lngCollector.Tools\bin\Debug\net6.0\lngCollector.Tools.dll
+D:\prg\lngCollector\lngCollector.Tools\bin\Debug\net6.0\lngCollector.Tools.pdb
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.csproj.AssemblyReference.cache
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.GeneratedMSBuildEditorConfig.editorconfig
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.AssemblyInfoInputs.cache
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.AssemblyInfo.cs
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.csproj.CoreCompileInputs.cache
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.dll
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\refint\lngCollector.Tools.dll
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\lngCollector.Tools.pdb
+D:\prg\lngCollector\lngCollector.Tools\obj\Debug\net6.0\ref\lngCollector.Tools.dll
