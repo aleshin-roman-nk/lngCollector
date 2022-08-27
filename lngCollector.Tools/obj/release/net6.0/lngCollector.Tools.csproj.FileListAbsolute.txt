@@ -10,15 +10,3 @@ e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.
 e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\refint\lngCollector.Tools.dll
 e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\lngCollector.Tools.pdb
 e:\prj\c#\lngCollector\lngCollector.Tools\obj\release\net6.0\ref\lngCollector.Tools.dll
-d:\prg\lngCollector\lngCollector.Tools\bin\Release\net6.0\lngCollector.Tools.deps.json
-d:\prg\lngCollector\lngCollector.Tools\bin\Release\net6.0\lngCollector.Tools.dll
-d:\prg\lngCollector\lngCollector.Tools\bin\Release\net6.0\lngCollector.Tools.pdb
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\lngCollector.Tools.csproj.AssemblyReference.cache
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\lngCollector.Tools.GeneratedMSBuildEditorConfig.editorconfig
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\lngCollector.Tools.AssemblyInfoInputs.cache
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\lngCollector.Tools.AssemblyInfo.cs
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\lngCollector.Tools.csproj.CoreCompileInputs.cache
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\lngCollector.Tools.dll
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\refint\lngCollector.Tools.dll
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\lngCollector.Tools.pdb
-d:\prg\lngCollector\lngCollector.Tools\obj\Release\net6.0\ref\lngCollector.Tools.dll

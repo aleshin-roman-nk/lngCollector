@@ -10,15 +10,3 @@ e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.
 e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\refint\lngCollector.Model.dll
 e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\lngCollector.Model.pdb
 e:\prj\c#\lngCollector\lngCollector.Model\obj\release\net6.0\ref\lngCollector.Model.dll
-d:\prg\lngCollector\lngCollector.Model\bin\Release\net6.0\lngCollector.Model.deps.json
-d:\prg\lngCollector\lngCollector.Model\bin\Release\net6.0\lngCollector.Model.dll
-d:\prg\lngCollector\lngCollector.Model\bin\Release\net6.0\lngCollector.Model.pdb
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\lngCollector.Model.csproj.AssemblyReference.cache
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\lngCollector.Model.GeneratedMSBuildEditorConfig.editorconfig
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\lngCollector.Model.AssemblyInfoInputs.cache
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\lngCollector.Model.AssemblyInfo.cs
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\lngCollector.Model.csproj.CoreCompileInputs.cache
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\lngCollector.Model.dll
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\refint\lngCollector.Model.dll
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\lngCollector.Model.pdb
-d:\prg\lngCollector\lngCollector.Model\obj\Release\net6.0\ref\lngCollector.Model.dll
