@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P7gl8VKeY3iQXqALQRsWYEqsdFIQAqR6Ixe7eANZFvlpDnlXzE4vzo4jfl/tZMtgl44snoiJO8Vjsq68chCf4g==",
+  "dgSpecHash": "LZENVwblBttdq9gRsu06KziLUl5RLzdreLx0QX5fSNzbafZ7uuS820SoyEiTBCUOGYMseT6BQ2MIlQ8BRYe51Q==",
   "success": true,
-  "projectFilePath": "d:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
+  "projectFilePath": "D:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alesh\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

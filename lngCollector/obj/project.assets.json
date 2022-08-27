@@ -1760,11 +1760,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\prg\\lngCollector\\lngCollector\\lngCollector.csproj",
+      "projectUniqueName": "D:\\prg\\lngCollector\\lngCollector\\lngCollector.csproj",
       "projectName": "lngCollector",
-      "projectPath": "d:\\prg\\lngCollector\\lngCollector\\lngCollector.csproj",
+      "projectPath": "D:\\prg\\lngCollector\\lngCollector\\lngCollector.csproj",
       "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
-      "outputPath": "d:\\prg\\lngCollector\\lngCollector\\obj\\",
+      "outputPath": "D:\\prg\\lngCollector\\lngCollector\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1781,11 +1781,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "d:\\prg\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj": {
-              "projectPath": "d:\\prg\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj"
+            "D:\\prg\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj": {
+              "projectPath": "D:\\prg\\lngCollector\\lngCollector.Services\\lngCollector.Services.csproj"
             },
-            "d:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {
-              "projectPath": "d:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj"
+            "D:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj": {
+              "projectPath": "D:\\prg\\lngCollector\\lngCollector.Tools\\lngCollector.Tools.csproj"
             }
           }
         }

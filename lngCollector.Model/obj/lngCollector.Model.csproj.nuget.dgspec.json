@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {}
+    "D:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {}
   },
   "projects": {
-    "d:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
+    "D:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
+        "projectUniqueName": "D:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
         "projectName": "lngCollector.Model",
-        "projectPath": "d:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
+        "projectPath": "D:\\prg\\lngCollector\\lngCollector.Model\\lngCollector.Model.csproj",
         "packagesPath": "C:\\Users\\alesh\\.nuget\\packages\\",
-        "outputPath": "d:\\prg\\lngCollector\\lngCollector.Model\\obj\\",
+        "outputPath": "D:\\prg\\lngCollector\\lngCollector.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
