@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dIXs7O3CSy8Q7speI1C7g4ObfDLa8dvGpZfCNHAZvus=",
+  "Hash": "OxCYuCn4CoL4VqeqiVAYJNZ3q5nyAPm7gEN+TYMoudU=",
   "Source": "lngCollector",
   "BasePath": "_content/lngCollector",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "d:\\prg\\lngCollector\\lngCollector\\obj\\release\\net6.0\\scopedcss\\bundle\\lngCollector.styles.css",
+      "Identity": "d:\\prg\\lngCollector\\lngCollector\\obj\\Release\\net6.0\\scopedcss\\bundle\\lngCollector.styles.css",
       "SourceId": "lngCollector",
       "SourceType": "Computed",
-      "ContentRoot": "d:\\prg\\lngCollector\\lngCollector\\obj\\release\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "d:\\prg\\lngCollector\\lngCollector\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/lngCollector",
       "RelativePath": "lngCollector.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "d:\\prg\\lngCollector\\lngCollector\\obj\\release\\net6.0\\scopedcss\\bundle\\lngCollector.styles.css"
+      "OriginalItemSpec": "d:\\prg\\lngCollector\\lngCollector\\obj\\Release\\net6.0\\scopedcss\\bundle\\lngCollector.styles.css"
     },
     {
-      "Identity": "d:\\prg\\lngCollector\\lngCollector\\obj\\release\\net6.0\\scopedcss\\projectbundle\\lngCollector.bundle.scp.css",
+      "Identity": "d:\\prg\\lngCollector\\lngCollector\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\lngCollector.bundle.scp.css",
       "SourceId": "lngCollector",
       "SourceType": "Computed",
-      "ContentRoot": "d:\\prg\\lngCollector\\lngCollector\\obj\\release\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "d:\\prg\\lngCollector\\lngCollector\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/lngCollector",
       "RelativePath": "lngCollector.bundle.scp.css",
       "AssetKind": "All",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "d:\\prg\\lngCollector\\lngCollector\\obj\\release\\net6.0\\scopedcss\\projectbundle\\lngCollector.bundle.scp.css"
+      "OriginalItemSpec": "d:\\prg\\lngCollector\\lngCollector\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\lngCollector.bundle.scp.css"
     },
     {
       "Identity": "d:\\prg\\lngCollector\\lngCollector\\wwwroot\\css\\site.css",

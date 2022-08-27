@@ -6,10 +6,32 @@
     string person = User.Identity.IsAuthenticated ? @Model.Nme : "guest!!!";
 }
 
-<div class="row text-center">
+@*<div class="row text-center">
     <div class="col">
         <h1 class="display-4">Language Collector</h1>
         <h2>Hello @person!!!</h2>
-        @*<h3>Click <a class="btn btn-success" href="/W/Words">here</a> to start collecting languages</h3>*@
     </div>
-</div>
+</div>*@
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h3>
+        ACTIONS
+        <a class="ml-2 btn btn-link" asp-page="/users/LngSettings">LNG</a>
+    </h3>
+
+    <div class="raw">
+        <a asp-page="/matrix/all" class="btn">
+            <img src="/img/icons8-matrix-60.png" />
+        </a>
+
+        <a asp-page="/total/cosmos" class="btn">
+            <img src="/img/icons8-sigma-48.png" />
+        </a>
+    </div>
+}
+else
+{
+    <a class="btn btn-link" asp-page="/users/login">Login</a>
+    <a class="btn btn-link" asp-page="/users/registration">Register</a>
+}

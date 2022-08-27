@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SBiO+pzcZoQwqXi4mQPHjURx1kPUNkp1CY9l+JgrF2crVChtThQkPJYZB9ThU4LTYPR7NNALRYb3YfF34QIiNg==",
+  "dgSpecHash": "LORiINKWCSC1HQn39ylqxnuUMBN4T59FLmPCsz/sEc6mqs2ShEQvU+uv9zzIVlm03E4JXdZn2DwRHqPpaMc8Gw==",
   "success": true,
-  "projectFilePath": "E:\\prj\\c#\\lngCollector\\lngCollector\\lngCollector.csproj",
+  "projectFilePath": "d:\\prg\\lngCollector\\lngCollector\\lngCollector.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alesh\\.nuget\\packages\\mailkit\\3.3.0\\mailkit.3.3.0.nupkg.sha512",
     "C:\\Users\\alesh\\.nuget\\packages\\microsoft.data.sqlite\\6.0.3\\microsoft.data.sqlite.6.0.3.nupkg.sha512",

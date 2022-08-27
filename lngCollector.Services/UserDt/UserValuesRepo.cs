@@ -14,12 +14,17 @@ namespace lngCollector.Services.UserDt
         {
             this.dbFactory = dbFactory;
         }
-        public string? GetValue(string valName)
+        public string? LoadValue(string valName)
         {
             using(var db = dbFactory.Create())
             {
                 return db.Variables.Where(x => x.UserId == db.UserInfo.UID && x.Name.Equals(valName)).Select(x => x.Value).SingleOrDefault();
             }
+        }
+
+        public void SaveValue(string name, string value)
+        {
+            throw new NotImplementedException();
         }
     }
 }
