@@ -15,6 +15,7 @@ namespace lngCollector.Model
         }
 
         public int id { get; set; }
+        public int parentId { get; set; }
         public int user_id { get; set; }
         public int lng_id { get; set; }
         public string? name { get; set; }

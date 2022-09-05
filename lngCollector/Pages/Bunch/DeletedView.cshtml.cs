@@ -3,7 +3,7 @@ using lngCollector.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace lngCollector.Pages.Matrix
+namespace lngCollector.Pages.Bunch
 {
     public class DeletedViewModel : PageModel
     {

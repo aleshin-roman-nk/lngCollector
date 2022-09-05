@@ -30,25 +30,23 @@ namespace lngCollector.Pages.Users
             }
         }
 
-        public void OnPost()
+        public IActionResult OnPostChangeName()
         {
+            Console.WriteLine(UserA.name);
 
+            if (string.IsNullOrEmpty(UserA.name))
+            {
+                ModelState.AddModelError("name", "User name must not be empty");
+                return Page();
+            }
+
+            _repo.UpdateFields(UserA, new string[] {nameof(UserA.name)});
+
+            return RedirectToPage("/users/useraccount");
         }
 
         public IActionResult OnPostChangeEmail()
         {
-            
-
-            // todo
-            // сохранить новый адрес.
-            // сгенерировать новый код подтверждения
-            // поле что емаил подтвержден перевести в false
-
-            //Console.WriteLine($"email : {UserA.email}");
-
-            //ModelState.Remove("Message");
-
-
             if(string.IsNullOrEmpty(UserA.email))
             {
                 ModelState.AddModelError("email", "Email should not be an empty string");
@@ -61,8 +59,6 @@ namespace lngCollector.Pages.Users
                 return Page();
             }
 
-
-
             Random random = new Random();
             string code = random.Next(100000, 1000000).ToString();
 
@@ -70,29 +66,6 @@ namespace lngCollector.Pages.Users
             UserA.email_verification_code = code;
 
             _repo.UpdateFields(UserA, new string[] { nameof(UserA.email), nameof(UserA.email_verification_code), nameof(UserA.email_verified) });
-
-            //Console.WriteLine($"email has been changed for id={UserA.id}");
-
-            //Message = "email has changed";
-
-            //else
-            //{
-            //    StringBuilder sb = new StringBuilder();
-
-            //    foreach (var item in new string[] { nameof(UserA.email), nameof(UserA.email_verification_code), nameof(UserA.email_verified) })
-            //    {
-            //        Console.WriteLine(item);
-            //    }
-
-            //    foreach (var item in ModelState)
-            //    {
-            //        sb.AppendLine($"([{item.Key}] : [{item.Value.AttemptedValue}]) ");
-            //    }
-
-            //    Error = sb.ToString();
-
-            //    return Page();
-            //}
 
             return RedirectToPage("/users/useraccount");
         }

@@ -1,0 +1,5 @@
+d:\prg\lngCollector\lngCollector.Console\obj\Release\net6.0\lngCollector.Console.csproj.AssemblyReference.cache
+d:\prg\lngCollector\lngCollector.Console\obj\Release\net6.0\lngCollector.Console.GeneratedMSBuildEditorConfig.editorconfig
+d:\prg\lngCollector\lngCollector.Console\obj\Release\net6.0\lngCollector.Console.AssemblyInfoInputs.cache
+d:\prg\lngCollector\lngCollector.Console\obj\Release\net6.0\lngCollector.Console.AssemblyInfo.cs
+d:\prg\lngCollector\lngCollector.Console\obj\Release\net6.0\lngCollector.Console.csproj.CoreCompileInputs.cache

@@ -41,7 +41,7 @@ namespace lngCollector.Services
             {
                 if (ws.id == 0)// a new word - check if it already exists
                 {
-                    ws.weight = 0;
+                    //ws.weight = 0;// bad. here we just have to only update data base with the new object added into context.
                     if (db.EWords.Any(x => EF.Functions.Like(x.text, ws.text) && x.user_id == db.UserInfo.UID))
                         throw new InvalidOperationException($"Word '{ws.text}' already exists");
 
@@ -164,6 +164,7 @@ namespace lngCollector.Services
                 db.Entry(ws).Property(x => x.meaning).IsModified = true;
                 db.Entry(ws).Property(x => x.meaning_verb).IsModified = true;
                 db.Entry(ws).Property(x => x.meaning_noun).IsModified = true;
+                db.Entry(ws).Property(x => x.lng_id).IsModified = true;
                 return db.SaveChanges();
             }
         }

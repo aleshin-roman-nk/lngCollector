@@ -1,5 +1,6 @@
 ﻿using lngCollector.Model;
 using lngCollector.Services;
+using lngCollector.Services.UserDt;
 using lngCollector.Tools;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,11 +15,13 @@ namespace lngCollector.Pages.Word
     {
         IEWordRepo repo;
         private readonly ILngRepo lngrepo;
+        private readonly IUserValuesRepo valuesRepo;
 
-        public EditModel(IEWordRepo r, ILngRepo lngrepo)
+        public EditModel(IEWordRepo r, ILngRepo lngrepo, IUserValuesRepo valuesRepo)
         {
             repo = r;
             this.lngrepo = lngrepo;
+            this.valuesRepo = valuesRepo;
         }
 
         public void OnGetCreate(int matrixid)
@@ -26,9 +29,9 @@ namespace lngCollector.Pages.Word
             int id = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
             Options = lngrepo.All().Select(x => new SelectListItem { Value = x.id.ToString(), Text = x.name }).ToList();
 
-            // Take lng_id from the user values table and put it for the new user.
+            var current_lng = int.Parse(valuesRepo.LoadValue("current_lng") ?? "0");
 
-            Word = new EWord { MatrixId = matrixid, weight = 0, date = DateTime.Now, user_id = id };
+            Word = new EWord { MatrixId = matrixid, weight = 0, date = DateTime.Now, user_id = id, lng_id = current_lng };
         }
 
         public IActionResult OnGetEdit(int id)
@@ -36,9 +39,6 @@ namespace lngCollector.Pages.Word
             Word = repo.Get(id);
 
             Options = lngrepo.All().Select(x => new SelectListItem { Value = x.id.ToString(), Text = x.name }).ToList();
-
-            //foreach (var item in lngrepo.All())
-            //    Options.Add(new SelectListItem { Value = item.id.ToString(), Text = item.name });
 
             if (Word == null)
                 return RedirectToPage("/NotFound");
@@ -59,7 +59,6 @@ namespace lngCollector.Pages.Word
                 try
                 {
                     Word = repo.Create(Word);
-                    //Word.lng_type = LngType.eng;
                     return RedirectToPage("Detail", new { id = Word.id });
                 }
                 catch (Exception ex)

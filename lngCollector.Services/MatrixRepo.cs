@@ -48,12 +48,12 @@ namespace lngCollector.Services
             }
         }
 
-        public IEnumerable<Matrix> GetAll()
+        public IEnumerable<Matrix> GetAll(int lngid)
         {
             using (var db = _dbFactory.Create())
             {
                 var matrxs = db.Matrixs
-                    .Where(m => !m.isdeleted && m.user_id == db.UserInfo.UID)
+                    .Where(m => !m.isdeleted && m.user_id == db.UserInfo.UID && m.lng_id == lngid)
                     .Select(m => new Matrix
                     {
                         id = m.id,
@@ -139,6 +139,28 @@ namespace lngCollector.Services
                 db.Matrixs.Attach(m);
                 db.Matrixs.Remove(m);
                 db.SaveChanges();
+            }
+        }
+
+        public IEnumerable<Matrix> GetAll()
+        {
+            using (var db = _dbFactory.Create())
+            {
+                var matrxs = db.Matrixs
+                    .Where(m => !m.isdeleted && m.user_id == db.UserInfo.UID)
+                    .Select(m => new Matrix
+                    {
+                        id = m.id,
+                        content_short = m.content_short,
+                        name = m.name,
+                        word_count = db.EWords.Where(x => x.MatrixId == m.id).Count(),
+                        snt_count_actually = db.EWords.Where(x => x.MatrixId == m.id).Sum(x => x.weight),
+                        snt_count_target = db.EWords.Where(x => x.MatrixId == m.id).Count() * 60
+                    }).ToList();
+
+                return matrxs;
+
+                //return db.Matrixs.Where(x => !x.isdeleted).ToList();
             }
         }
     }

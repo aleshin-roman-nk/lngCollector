@@ -10,6 +10,7 @@ namespace lngCollector.Services
     public interface IMatrixRepo
     {
         IEnumerable<Matrix> GetAll();
+        IEnumerable<Matrix> GetAll(int lngid);
         Matrix? Get(int id);
         void Save(Matrix matrix);
         void Create(Matrix m);

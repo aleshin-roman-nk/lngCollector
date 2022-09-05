@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OxCYuCn4CoL4VqeqiVAYJNZ3q5nyAPm7gEN+TYMoudU=",
+  "Hash": "prdGWW9SuxR53+tsIm9+s4y+cqc3jn9p6acb21sYPCw=",
   "Source": "lngCollector",
   "BasePath": "_content/lngCollector",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\icons8-add-50.png"
+    },
+    {
+      "Identity": "d:\\prg\\lngCollector\\lngCollector\\wwwroot\\img\\icons8-back-48.png",
+      "SourceId": "lngCollector",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\prg\\lngCollector\\lngCollector\\wwwroot\\",
+      "BasePath": "_content/lngCollector",
+      "RelativePath": "img/icons8-back-48.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icons8-back-48.png"
     },
     {
       "Identity": "d:\\prg\\lngCollector\\lngCollector\\wwwroot\\img\\icons8-matrix-60 - Copy.png",

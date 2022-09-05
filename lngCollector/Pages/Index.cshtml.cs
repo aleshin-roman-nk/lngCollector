@@ -12,9 +12,15 @@ namespace lngCollector.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
             Nme = User.Identity.Name;
+
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToPage("/lngActions");
+            }
+            else return Page();
         }
 
         [BindProperty]

@@ -9,6 +9,7 @@ namespace lngCollector.Services.UserDt
     public interface IUserValuesRepo
     {
         string? LoadValue(string valName);
+        int? LoadInt(string valName);
         void SaveValue(string name, string value);
     }
 }

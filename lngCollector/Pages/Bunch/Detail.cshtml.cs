@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace lngCollector.Pages.Matrix
+namespace lngCollector.Pages.Bunch
 {
     [Authorize]
     public class DetailModel : PageModel

@@ -1,7 +1,7 @@
 ﻿@page
 @model lngCollector.Pages.Users.UserAccountModel
 @{
-    string isconfemail = Model.UserA.email_verified.Value ? "" : " - email is not confirmed";
+    string isconfemail = Model.UserA.email_verified ? "" : " - email is not confirmed";
 }
 
 <h1>User profile @isconfemail</h1>
@@ -19,6 +19,7 @@
         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
 
         <div class="form-group row">
+            <input type="hidden" asp-for="UserA.id" />
             <span class="text-danger" asp-validation-for="UserA.name"></span>
             <div class="col-2">
                 <label asp-for="UserA.name"></label>
@@ -28,11 +29,10 @@
             </div>
 
             <div class="col-2">
-                <input type="submit" value="Save" class="btn btn-link" />
+                <input type="submit" value="Save" asp-page-handler="ChangeName" class="btn btn-link" />
             </div>
         </div>
     </form>
-
 
     <form method="post">
         <div class="text-danger" asp-validation-summary="ModelOnly"></div>
@@ -56,7 +56,7 @@
         </div>
     </form>
 
-    @if (!Model.UserA.email_verified.Value)
+    @if (!Model.UserA.email_verified)
     {
         <div class="row mt-2">
 

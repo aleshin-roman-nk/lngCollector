@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{handler?}/{lngid?}"
 @model lngCollector.Pages.Users.LngSettingsModel
 @{
 }
@@ -6,5 +6,7 @@
 <a class="ml-2 btn btn-link" asp-page="/lngactions">back</a>
 <hr/>
 
-This page is for choose a language.
-
+@foreach (var item in Model.Lngs)
+{
+    <a class="ml-2 btn btn-link" asp-page-handler="SetLng" asp-route-lngid="@item.id">@item.name</a>
+}

@@ -23,5 +23,22 @@ namespace lngCollector.Services
                 return db.Lngs.ToList();
             }
         }
+
+        public void Create(string sh_name, string full_name)
+        {
+            using (var db = dbFactory.Create())
+            {
+                db.Lngs.Add(new Lng { name = full_name, short_name = sh_name });
+                db.SaveChanges();
+            }
+        }
+
+        public Lng Get(int id)
+        {
+            using (var db = dbFactory.Create())
+            {
+                return db.Lngs.FirstOrDefault(x => x.id == id);
+            }
+        }
     }
 }

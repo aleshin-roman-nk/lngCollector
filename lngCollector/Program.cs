@@ -2,6 +2,7 @@ using lngCollector;
 using lngCollector.Services;
 using lngCollector.Services.sqliteDb;
 using lngCollector.Services.UserAuth;
+using lngCollector.Services.UserDt;
 using System.Security.Claims;
 using System.Text;
 
@@ -19,6 +20,7 @@ builder.Services.AddTransient<IMatrixRepo, MatrixRepo>();
 builder.Services.AddTransient<IUserAuthRepo, UserAuthRepo>();
 builder.Services.AddTransient<ICosmosRepo, CosmosRepo>();
 builder.Services.AddTransient<ILngRepo, LngRepo>();
+builder.Services.AddTransient<IUserValuesRepo, UserValuesRepo>();
 
 builder.Services.Configure<RouteOptions>(options =>
 {

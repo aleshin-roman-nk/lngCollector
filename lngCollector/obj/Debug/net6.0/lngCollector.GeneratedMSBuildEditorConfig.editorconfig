@@ -15,6 +15,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\prg\lngCollector\lngCollector
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/prg/lngCollector/lngCollector/Pages/addlng.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkbG5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prg/lngCollector/lngCollector/Pages/Bunch/all.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcYWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prg/lngCollector/lngCollector/Pages/Bunch/DeletedView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcRGVsZXRlZFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prg/lngCollector/lngCollector/Pages/Bunch/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prg/lngCollector/lngCollector/Pages/Bunch/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prg/lngCollector/lngCollector/Pages/Bunch/M100x100.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcTTEwMHgxMDAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/prg/lngCollector/lngCollector/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -31,32 +55,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG5nQWN0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/all.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XGFsbC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/DeletedView.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XERlbGV0ZWRWaWV3LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/Detail.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XERldGFpbC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XEVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/prg/lngCollector/lngCollector/Pages/Matrix/M100x100.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0cml4XE0xMDB4MTAwLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/prg/lngCollector/lngCollector/Pages/NotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/prg/lngCollector/lngCollector/Pages/Shared/_ActionsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BY3Rpb25zUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/prg/lngCollector/lngCollector/Pages/Shared/_LoginStatePartial.cshtml]
@@ -65,6 +65,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/prg/lngCollector/lngCollector/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prg/lngCollector/lngCollector/Pages/ssp32167.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3NwMzIxNjcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prg/lngCollector/lngCollector/Pages/Story/all.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcnlcYWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/prg/lngCollector/lngCollector/Pages/tools/sentenceEdit.cshtml]

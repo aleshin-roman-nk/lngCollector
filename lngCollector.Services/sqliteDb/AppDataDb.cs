@@ -33,5 +33,6 @@ namespace lngCollector.Services.sqliteDb
         public DbSet<Matrix> Matrixs { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserValue> Variables { get; set; }
+        public DbSet<Story> Stories { get; set; }
     }
 }

@@ -9,9 +9,9 @@ namespace lngCollector.Model.UserDt
     public class UserValue
     {
         public int id { get; set; }
-        public int UserId { get; set; }
-        public string Name { get; set; }
-        public string Value { get; set; }
+        public int user_id { get; set; }
+        public string name { get; set; }
+        public string value { get; set; }
 
     }
 }
