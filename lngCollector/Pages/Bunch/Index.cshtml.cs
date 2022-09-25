@@ -8,12 +8,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace lngCollector.Pages.Bunch
 {
     [Authorize]
-    public class allModel : PageModel
+    public class IndexModel : PageModel
     {
         private readonly IMatrixRepo _db;
         private readonly IUserValuesRepo valuesRepo;
 
-        public allModel(IMatrixRepo db, IUserValuesRepo valuesRepo)
+        public IndexModel(IMatrixRepo db, IUserValuesRepo valuesRepo)
         {
             _db = db;
             this.valuesRepo = valuesRepo;
@@ -23,10 +23,10 @@ namespace lngCollector.Pages.Bunch
         {
             var lngid = valuesRepo.LoadInt("current_lng");
 
-            Matrices = _db.GetAll(lngid ?? 0); 
+            Bunches = _db.GetAll(lngid ?? 0); 
         }
 
         [BindProperty]
-        public IEnumerable<Model.Matrix> Matrices { get; set; }
+        public IEnumerable<Model.Bunch> Bunches { get; set; }
     }
 }

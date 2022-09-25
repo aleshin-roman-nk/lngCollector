@@ -17,7 +17,7 @@ namespace lngCollector.Services
             _dbFactory = dbFactory;
         }
 
-        public Matrix? Get(int id)
+        public Bunch? Get(int id)
         {
             using (var db = _dbFactory.Create())
             {
@@ -41,20 +41,20 @@ namespace lngCollector.Services
                             }
                     ).FirstOrDefault();
 
-                Matrix res = matr._m;
+                Bunch res = matr._m;
                 res.EWords = matr._words.ToList();
 
                 return res;
             }
         }
 
-        public IEnumerable<Matrix> GetAll(int lngid)
+        public IEnumerable<Bunch> GetAll(int lngid)
         {
             using (var db = _dbFactory.Create())
             {
                 var matrxs = db.Matrixs
                     .Where(m => !m.isdeleted && m.user_id == db.UserInfo.UID && m.lng_id == lngid)
-                    .Select(m => new Matrix
+                    .Select(m => new Bunch
                     {
                         id = m.id,
                         content_short = m.content_short,
@@ -70,7 +70,7 @@ namespace lngCollector.Services
             }
         }
 
-        public void Create(Matrix m)
+        public void Create(Bunch m)
         {
             using (var db = _dbFactory.Create())
             {
@@ -80,7 +80,7 @@ namespace lngCollector.Services
             }
         }
 
-        public void Save(Matrix m)
+        public void Save(Bunch m)
         {
             using (var db = _dbFactory.Create())
             {
@@ -89,7 +89,7 @@ namespace lngCollector.Services
             }
         }
 
-        public void Delete(Matrix m)
+        public void Delete(Bunch m)
         {
             using (var db = _dbFactory.Create())
             {
@@ -98,7 +98,7 @@ namespace lngCollector.Services
             }
         }
 
-        public void SendToBinRecycle(Matrix m)
+        public void SendToBinRecycle(Bunch m)
         {
             using (var db = _dbFactory.Create())
             {
@@ -108,7 +108,7 @@ namespace lngCollector.Services
             }
         }
 
-        public IEnumerable<Matrix> AllDeleted()
+        public IEnumerable<Bunch> AllDeleted()
         {
             using (var db = _dbFactory.Create())
             {
@@ -120,7 +120,7 @@ namespace lngCollector.Services
         {
             using (var db = _dbFactory.Create())
             {
-                var matr = db.Matrixs.Select(m => new Matrix { id = m.id, isdeleted = m.isdeleted}).FirstOrDefault(x => x.id == id);
+                var matr = db.Matrixs.Select(m => new Bunch { id = m.id, isdeleted = m.isdeleted}).FirstOrDefault(x => x.id == id);
 
                 if (matr != null)
                 {
@@ -135,20 +135,20 @@ namespace lngCollector.Services
         {
             using (var db = _dbFactory.Create())
             {
-                var m = new Matrix() { id = id };
+                var m = new Bunch() { id = id };
                 db.Matrixs.Attach(m);
                 db.Matrixs.Remove(m);
                 db.SaveChanges();
             }
         }
 
-        public IEnumerable<Matrix> GetAll()
+        public IEnumerable<Bunch> GetAll()
         {
             using (var db = _dbFactory.Create())
             {
                 var matrxs = db.Matrixs
                     .Where(m => !m.isdeleted && m.user_id == db.UserInfo.UID)
-                    .Select(m => new Matrix
+                    .Select(m => new Bunch
                     {
                         id = m.id,
                         content_short = m.content_short,

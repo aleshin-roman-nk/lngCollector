@@ -36,6 +36,6 @@ namespace lngCollector.Pages.Bunch
         }
 
         [BindProperty]
-        public IEnumerable<Model.Matrix> Matrixes { get; set; }
+        public IEnumerable<Model.Bunch> Matrixes { get; set; }
     }
 }

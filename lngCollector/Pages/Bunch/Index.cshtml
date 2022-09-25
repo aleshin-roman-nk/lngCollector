@@ -1,6 +1,6 @@
 ﻿@page
 @using Microsoft.AspNetCore.Components
-@model lngCollector.Pages.Bunch.allModel
+@model lngCollector.Pages.Bunch.IndexModel
 @{
     string percent(int curr, int max)
     {
@@ -22,11 +22,11 @@
 <hr/>
 
 <div>
-    <a asp-page="/matrix/edit" asp-page-handler="create" class="btn">
+    <a asp-page="/bunches/edit" asp-page-handler="create" class="btn">
         <img src="/img/icons8-plus-math-48.png" />
     </a>
 
-    <a asp-page="/matrix/deletedview" class="btn">
+    <a asp-page="/bunches/deletedview" class="btn">
         <img src="/img/icons8-recycle-bin-48.png" />
     </a>
 </div>
@@ -34,7 +34,7 @@
 <hr />
 
 <div class="row">
-    @foreach (var item in Model.Matrices)
+    @foreach (var item in Model.Bunches)
     {
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card-deck">
@@ -46,7 +46,7 @@
                         <div class="row">
 
                             <div class="col-2">
-                                <a asp-page="/matrix/detail" asp-route-id="@item.id" class="btn btn-outline-warning">...</a>
+                                <a asp-page="/bunches/detail" asp-route-id="@item.id" class="btn btn-outline-warning">...</a>
                             </div>
 
                             <div class="col-8">

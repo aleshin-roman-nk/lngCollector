@@ -9,15 +9,15 @@ namespace lngCollector.Services
 {
     public interface IMatrixRepo
     {
-        IEnumerable<Matrix> GetAll();
-        IEnumerable<Matrix> GetAll(int lngid);
-        Matrix? Get(int id);
-        void Save(Matrix matrix);
-        void Create(Matrix m);
-        void Delete(Matrix m);
+        IEnumerable<Bunch> GetAll();
+        IEnumerable<Bunch> GetAll(int lngid);
+        Bunch? Get(int id);
+        void Save(Bunch matrix);
+        void Create(Bunch m);
+        void Delete(Bunch m);
         void Delete(int id);
-        void SendToBinRecycle(Matrix m);
-        IEnumerable<Matrix> AllDeleted();
+        void SendToBinRecycle(Bunch m);
+        IEnumerable<Bunch> AllDeleted();
         void RestoreFromBinRecycle(int id);
     }
 }

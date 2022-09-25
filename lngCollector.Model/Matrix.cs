@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace lngCollector.Model
 {
-    public class Matrix
+    public class Bunch
     {
-        public Matrix()
+        public Bunch()
         {
             EWords = new List<EWord>();
         }

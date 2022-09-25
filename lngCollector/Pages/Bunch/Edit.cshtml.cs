@@ -42,7 +42,7 @@ namespace lngCollector.Pages.Bunch
 
             var currLng = valuesRepo.LoadInt("current_lng");
 
-            Matrix = new Model.Matrix { date = DateTime.Now, user_id = uid, lng_id = currLng ?? 0 };
+            Matrix = new Model.Bunch { date = DateTime.Now, user_id = uid, lng_id = currLng ?? 0 };
         }
 
         // Just save an object
@@ -72,7 +72,7 @@ namespace lngCollector.Pages.Bunch
         }
 
         [BindProperty]
-        public Model.Matrix? Matrix { get; set; }
+        public Model.Bunch? Matrix { get; set; }
         public string operation { get; set; }
         public string Error { get; set; }
 

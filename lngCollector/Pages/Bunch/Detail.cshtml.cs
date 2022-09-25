@@ -30,7 +30,7 @@ namespace lngCollector.Pages.Bunch
         public IActionResult OnPostDelete()
         {
 
-            //_db.Delete(Matrix);
+            //_db.Delete(Bunch);
 
             _db.SendToBinRecycle(Matrix);
 
@@ -38,6 +38,6 @@ namespace lngCollector.Pages.Bunch
         }
 
         [BindProperty]
-        public Model.Matrix? Matrix { get; set; }
+        public Model.Bunch? Matrix { get; set; }
     }
 }

@@ -19,10 +19,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkbG5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/prg/lngCollector/lngCollector/Pages/Bunch/all.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcYWxsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/prg/lngCollector/lngCollector/Pages/Bunch/DeletedView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcRGVsZXRlZFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -33,6 +29,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/prg/lngCollector/lngCollector/Pages/Bunch/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/prg/lngCollector/lngCollector/Pages/Bunch/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQnVuY2hcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/prg/lngCollector/lngCollector/Pages/Bunch/M100x100.cshtml]

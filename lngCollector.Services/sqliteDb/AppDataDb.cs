@@ -30,7 +30,7 @@ namespace lngCollector.Services.sqliteDb
         public DbSet<EWord> EWords { get; set; }
         public DbSet<Lng> Lngs { get; set; }
         public DbSet<Sentence> Sentences { get; set; }
-        public DbSet<Matrix> Matrixs { get; set; }
+        public DbSet<Bunch> Matrixs { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserValue> Variables { get; set; }
         public DbSet<Story> Stories { get; set; }
