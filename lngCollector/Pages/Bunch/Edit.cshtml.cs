@@ -61,14 +61,14 @@ namespace lngCollector.Pages.Bunch
             else
                 _db.Save(Matrix);
 
-            return RedirectToPage("/matrix/detail", new { id = Matrix.id });
+            return RedirectToPage("/bunch/detail", new { id = Matrix.id });
         }
 
         public IActionResult OnPostDelete()
         {
             _db.Delete(Matrix);
 
-            return RedirectToPage("/matrix/all");
+            return RedirectToPage("/bunch/all");
         }
 
         [BindProperty]

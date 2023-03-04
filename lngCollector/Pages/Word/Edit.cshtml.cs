@@ -31,7 +31,7 @@ namespace lngCollector.Pages.Word
 
             var current_lng = int.Parse(valuesRepo.LoadValue("current_lng") ?? "0");
 
-            Word = new EWord { MatrixId = matrixid, weight = 0, date = DateTime.Now, user_id = id, lng_id = current_lng };
+            Word = new EWord { bunch_id = matrixid, weight = 0, date = DateTime.Now, user_id = id, lng_id = current_lng };
         }
 
         public IActionResult OnGetEdit(int id)

@@ -17,7 +17,7 @@
     <input type="hidden" asp-for="Word.id"/>
 @*    <input type="hidden" asp-for="Word.lng_id"/>*@
     <input type="hidden" asp-for="Word.date"/>
-    <input type="hidden" asp-for="Word.MatrixId"/>
+    <input type="hidden" asp-for="Word.bunch_id"/>
     <input type="hidden" asp-for="Word.user_id"/>
 
     <!--Добавляем поля редактирования-->
@@ -103,7 +103,7 @@
                             <div class="card-footer text-center" style="background-color: rgba(0,0,0,.25)">
                                 @if(Model.Word.id == 0)
                                 {
-                                    <a asp-page="/matrix/detail" asp-route-ID="@Model.Word.MatrixId" class="btn btn-secondary">Back</a>
+                                    <a asp-page="/matrix/detail" asp-route-ID="@Model.Word.bunch_id" class="btn btn-secondary">Back</a>
                                 }
                                 else
                                 {

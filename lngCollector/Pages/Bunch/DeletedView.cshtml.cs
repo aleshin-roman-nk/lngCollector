@@ -24,7 +24,7 @@ namespace lngCollector.Pages.Bunch
             _db.Delete(id);
             Matrixes = _db.AllDeleted();
 
-            return RedirectToPage("/matrix/deletedview");
+            return RedirectToPage("/bunch/deletedview");
         }
 
         public IActionResult OnGetRestore(int id)
@@ -32,7 +32,7 @@ namespace lngCollector.Pages.Bunch
             _db.RestoreFromBinRecycle(id);
             Matrixes = _db.AllDeleted();
 
-            return RedirectToPage("/matrix/deletedview");
+            return RedirectToPage("/bunch/deletedview");
         }
 
         [BindProperty]

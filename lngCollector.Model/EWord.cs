@@ -10,8 +10,7 @@ namespace lngCollector.Model
     public class EWord
     {
         public int id { get; set; }
-        [Column("matrix_id")]
-        public int? MatrixId { get; set; }
+        public int? bunch_id { get; set; }// это поле не нужно. по логице 
         public int? user_id { get; set; }
         public string? text { get; set; }
         public string? description { get; set; }

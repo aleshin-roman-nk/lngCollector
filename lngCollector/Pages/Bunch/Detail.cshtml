@@ -18,8 +18,8 @@
         <form method="post" enctype="multipart/form-data">
             <input type="hidden" asp-for="Matrix.id" />
 
-            <a asp-page="/matrix/all" class="btn btn-outline-secondary">Back</a>
-            <a asp-page="/matrix/edit" asp-page-handler="edit" asp-route-id="@Model.Matrix.id" class="btn btn-info">Edit</a>
+            <a asp-page="/bunch/all" class="btn btn-outline-secondary">Back</a>
+            <a asp-page="/bunch/edit" asp-page-handler="edit" asp-route-id="@Model.Matrix.id" class="btn btn-info">Edit</a>
             <button type="submit" class="btn btn-outline-danger" asp-page-handler="Delete">Delete</button>
         </form>
 

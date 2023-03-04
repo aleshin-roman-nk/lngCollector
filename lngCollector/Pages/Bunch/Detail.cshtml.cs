@@ -20,7 +20,7 @@ namespace lngCollector.Pages.Bunch
         public IActionResult OnGet(int id)
         {
             if(id == 0)
-                return RedirectToPage("/matrix/all");
+                return RedirectToPage("/bunch/all");
 
             Matrix = _db.Get(id);
 
@@ -34,7 +34,7 @@ namespace lngCollector.Pages.Bunch
 
             _db.SendToBinRecycle(Matrix);
 
-            return RedirectToPage("/matrix/all");
+            return RedirectToPage("/bunch/all");
         }
 
         [BindProperty]

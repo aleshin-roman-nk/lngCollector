@@ -24,17 +24,17 @@ namespace lngCollector.Services
                 // Only text, weight and matrix_id properties are needed in an entity EWord type.
                 // In the EWord object type, only the text, weight, and matrix_id properties are required.
 
-                var matr = (from m in db.Matrixs
+                var matr = (from m in db.Bunches
                             where m.id == id
                             select new
                             {
                                 _m = m,
                                 _words = (from wrd in db.EWords
-                                         where wrd.MatrixId == m.id
+                                         where wrd.bunch_id == m.id
                                          select new EWord
                                          {
                                              id = wrd.id,
-                                             MatrixId = wrd.MatrixId,
+                                             bunch_id = wrd.bunch_id,
                                              text = wrd.text,
                                              weight = wrd.weight
                                          }).ToList()
@@ -52,21 +52,21 @@ namespace lngCollector.Services
         {
             using (var db = _dbFactory.Create())
             {
-                var matrxs = db.Matrixs
+                var matrxs = db.Bunches
                     .Where(m => !m.isdeleted && m.user_id == db.UserInfo.UID && m.lng_id == lngid)
                     .Select(m => new Bunch
                     {
                         id = m.id,
                         content_short = m.content_short,
                         name = m.name,
-                        word_count = db.EWords.Where(x => x.MatrixId == m.id).Count(),
-                        snt_count_actually = db.EWords.Where(x => x.MatrixId == m.id).Sum(x => x.weight),
-                        snt_count_target = db.EWords.Where(x => x.MatrixId == m.id).Count() * 60
+                        word_count = db.EWords.Where(x => x.bunch_id == m.id).Count(),
+                        snt_count_actually = db.EWords.Where(x => x.bunch_id == m.id).Sum(x => x.weight),
+                        snt_count_target = db.EWords.Where(x => x.bunch_id == m.id).Count() * 60
                     }).ToList();
 
                 return matrxs;
 
-                //return db.Matrixs.Where(x => !x.isdeleted).ToList();
+                //return db.Bunches.Where(x => !x.isdeleted).ToList();
             }
         }
 
@@ -75,7 +75,7 @@ namespace lngCollector.Services
             using (var db = _dbFactory.Create())
             {
                 m.isdeleted = false;
-                db.Matrixs.Add(m);
+                db.Bunches.Add(m);
                 db.SaveChanges();
             }
         }
@@ -112,7 +112,7 @@ namespace lngCollector.Services
         {
             using (var db = _dbFactory.Create())
             {
-                return db.Matrixs.Where(x => x.isdeleted).ToList();
+                return db.Bunches.Where(x => x.isdeleted).ToList();
             }
         }
 
@@ -120,7 +120,7 @@ namespace lngCollector.Services
         {
             using (var db = _dbFactory.Create())
             {
-                var matr = db.Matrixs.Select(m => new Bunch { id = m.id, isdeleted = m.isdeleted}).FirstOrDefault(x => x.id == id);
+                var matr = db.Bunches.Select(m => new Bunch { id = m.id, isdeleted = m.isdeleted}).FirstOrDefault(x => x.id == id);
 
                 if (matr != null)
                 {
@@ -136,8 +136,8 @@ namespace lngCollector.Services
             using (var db = _dbFactory.Create())
             {
                 var m = new Bunch() { id = id };
-                db.Matrixs.Attach(m);
-                db.Matrixs.Remove(m);
+                db.Bunches.Attach(m);
+                db.Bunches.Remove(m);
                 db.SaveChanges();
             }
         }
@@ -146,21 +146,21 @@ namespace lngCollector.Services
         {
             using (var db = _dbFactory.Create())
             {
-                var matrxs = db.Matrixs
+                var matrxs = db.Bunches
                     .Where(m => !m.isdeleted && m.user_id == db.UserInfo.UID)
                     .Select(m => new Bunch
                     {
                         id = m.id,
                         content_short = m.content_short,
                         name = m.name,
-                        word_count = db.EWords.Where(x => x.MatrixId == m.id).Count(),
-                        snt_count_actually = db.EWords.Where(x => x.MatrixId == m.id).Sum(x => x.weight),
-                        snt_count_target = db.EWords.Where(x => x.MatrixId == m.id).Count() * 60
+                        word_count = db.EWords.Where(x => x.bunch_id == m.id).Count(),
+                        snt_count_actually = db.EWords.Where(x => x.bunch_id == m.id).Sum(x => x.weight),
+                        snt_count_target = db.EWords.Where(x => x.bunch_id == m.id).Count() * 60
                     }).ToList();
 
                 return matrxs;
 
-                //return db.Matrixs.Where(x => !x.isdeleted).ToList();
+                //return db.Bunches.Where(x => !x.isdeleted).ToList();
             }
         }
     }

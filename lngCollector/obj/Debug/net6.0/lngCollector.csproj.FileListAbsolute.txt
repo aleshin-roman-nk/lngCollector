@@ -196,3 +196,8 @@ D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\refint\lngCollector.dll
 D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\lngCollector.pdb
 D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\lngCollector.genruntimeconfig.cache
 D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\ref\lngCollector.dll
+D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\staticwebassets\msbuild.lngCollector.Microsoft.AspNetCore.StaticWebAssets.props
+D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\staticwebassets\msbuild.build.lngCollector.props
+D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.lngCollector.props
+D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.lngCollector.props
+D:\prg\lngCollector\lngCollector\obj\Debug\net6.0\staticwebassets.pack.json
